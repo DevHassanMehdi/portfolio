@@ -174,21 +174,6 @@ const workExperiences = {
         "Worked alongside cross-functional teams to establish project goals and deliverables"
       ]
     },
-    {
-      role: "Jr. Web Developer",
-      company: "NetChain Media",
-      companylogo: require("./assets/images/netchainLogo.png"),
-      date: "January 2022 – Jan 2023",
-      desc: "At a UK-based software company, I contributed to build and maintain resilient and functional websites. I",
-      descBullets: [
-        "Assisted with the creation of websites and updating existing websites and web applications",
-        "Worked under the supervision of senior developers, assisted with coding, testing, design adjustments, and client reviews",
-        "Resolved escalated customer issues independently and was part of development on large product initiatives",
-        "Paired with other developers as well as collaborated with designers, product managers, and other stakeholders",
-        "Contributed to building and maintaining websites that were resilient and functional",
-        "participated in code reviews and provided feedback to other developers"
-      ]
-    }
   ]
 };
 
