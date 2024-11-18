@@ -162,8 +162,9 @@ const workExperiences = {
       company: "Ri Software",
       companylogo: require("./assets/images/riLogo.jpeg"),
       date: "April 2023 – February 2024",
-      desc: "At a Ukrainian-based software company, I led a team of back-end developers and data scientists, focusing on creating custom software solutions and algorithms that help businesses grow. During this time, I",
+      desc: "At Ri-Software, I led my team to embark on a transformative project to develop AI-driven business management software to empower businesses and foster growth. As a cohesive unit, we took on the responsibility of handling the backend and data science aspects of this innovative solution. Our collaborative efforts led us to develop robust backend elements, seamlessly integrating various data science algorithms into the backend infrastructure. This integration allowed for the efficient functioning of the software, where the front end connected flawlessly with the backend, ensuring a cohesive and functional end-to-end system. Through our collective expertise in Python development, AI models, machine learning, and deep learning principles, we successfully crafted a cutting-edge software solution that caters to the dynamic needs of modern businesses.",
       descBullets: [
+        "Led the team of passionate and hardworking backend developers and data scientists",
         "Collaborated closely with relevant stakeholders to ensure timely delivery of high-quality products",
         "Managed frequent code deployments without causing downtime",
         "Conducted thorough code reviews and provided constructive feedback to team members",
