@@ -23,23 +23,22 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: emoji(
-    "A self-motivated, creative, and passionate Python developer, I specialize in Computer Vision, AI, and Flask RESTful. I have experience as a lead Backend and Data Science developer, with a strong history of working on diverse software and hardware projects."
+    "I am a Master's student, specializing in AI at the University of Jyväskylä, Finland. My work focuses on innovative solutions in machine learning, computer vision, and backend development. Through this portfolio, I showcase my projects and contributions that reflect my passion for technology and problem-solving."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1YoiZIZouYp171q1dhowDFsVftbzWGQEf/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1Mre7QUf1n9nsBj2VzA6UTqw-OafWIUtZ/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
+  gmail: "hassanmehdi510@gmail.com",
   github: "https://github.com/DevHassanMehdi",
   linkedin: "https://www.linkedin.com/in/devhassanmehdi/",
-  gmail: "hassanmehdi510@gmail.com",
-  twitter: "https://twitter.com/DevHassanMehdi",
   facebook: "https://www.facebook.com/devhassanmehdi/",
   instagram: "https://www.instagram.com/devhassanmehdi/",
-  // kaggle: "https://gitlab.com/saadpasta",
+  kaggle: "https://www.kaggle.com/devhassan",
   // medium: "https://medium.com/@saadpasta",
   // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -50,15 +49,16 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "Core Competencies",
   subTitle:
-    "A VERSATILE PYTHON TECHNOLOGIST WHOS SKILLSET ENCOMPASSES A MULTITUDE OF TECHNOLOGIES AND PROGRAMMING LANGUAGES.",
+    "A VERSATILE PYTHON DEVELOPER WITH A DIVERSE SKILLSET IN ARTIFICIAL INTELLIGENCE, MACHINE LEARNING, AND SOFTWARE DEVELOPMENT.",
   skills: [
-    emoji("⚡ Develope AI models using ML, DL principles."),
-    emoji("⚡ Develope AI & Computer Vision based softwares."),
-    emoji("⚡ Integrate AI in custom software solutions and APIs."),
-    emoji("⚡ Design strong APIs that support mobile and desktop clients.")
+    emoji("⚡ Develop AI models leveraging machine learning and deep learning principles."),
+    emoji("⚡ Create AI and computer vision applications tailored to specific business needs."),
+    emoji("⚡ Integrate AI capabilities into custom software solutions and APIs."),
+    emoji("⚡ Design robust APIs that ensure seamless functionality for mobile and desktop applications.")
   ],
+
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -100,78 +100,91 @@ https://fontawesome.com/icons?d=gallery */
   display: true // Set false to hide this section, defaults to true
 };
 
+// Your top 3 proficient stacks/tech experience
+
+const techStack = {
+  viewSkillBars: true, // Set it to true to show Proficiency Section
+  experience: [
+    {
+      Stack: "Python Programming",
+      progressPercentage: "95%"
+    },
+    {
+      Stack: "Computer Vision, Machine Learning & Deep Learning",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Backend Development (Flask, Django)",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Data Science and Analytics (Pandas, NumPy, Scikit-learn)",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Frontend Development (HTML, CSS, JavaScript, React)",
+      progressPercentage: "80%"
+    }
+  ],
+  displayCodersrank: false // Set true to display codersrank badges section; change your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+};
+
 // Education Section
 
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
+      schoolName: "University of Jyväskylä",
+      logo: require("./assets/images/jyuLogo.png"), // Update with the actual logo path
+      subHeader: "Master of Science in Artificial Intelligence",
+      duration: "Expected Graduation: September 2026",
+      desc: "Currently pursuing a Master's degree with a focus on advanced AI techniques and applications.",
+      descBullets: [
+        "Studying cutting-edge topics in Machine Learning, Deep Learning, and Computer Vision.",
+        "Participating in collaborative research projects with faculty and industry experts.",
+        "Engaging in practical applications of AI through coursework and hands-on projects."
+      ]
+    },
+    {
       schoolName: "IQRA NATIONAL UNIVERSITY",
       logo: require("./assets/images/inuLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "February 2019 - February 2023",
-      desc: "Graduated as the topper of my batch, with a CGPA of 3.78 out of 4.0",
+      desc: "Graduated as the top student in my batch with a CGPA of 3.78 out of 4.0.",
       descBullets: [
-        "Artificial Intelligence, Data Mining, Information Security",
-        "Programming Fundamentals, Object Oriented Programming, Modern Programming, Visual Programming, Internet Programming, Microprocessors and Assembly Language, Database Systems",
-        "Calculus, Differential Equations, Linear Algebra, Theory of Automata, Discrete Structures, Data Structures, Design and Analysis of Algorithms, Statistics",
-        "Software Engineering, Object Oriented Analysis and Design",
-        "Digital Image Processing, Computer Graphics, Human Computer Interaction",
-        "C++, C#, Java, Python, JavaScript, PHP, HTML, CSS, MATLAB, SQL, GIT"
+        "Focused on core areas such as Artificial Intelligence, Data Mining, and Information Security.",
+        "Engaged in hands-on projects in Programming Fundamentals, Object-Oriented Programming, and Software Engineering.",
+        "Developed critical skills in Digital Image Processing, Computer Graphics, and Human-Computer Interaction.",
+        "Collaborated with industry professionals during workshops and seminars, enhancing my practical knowledge and networking.",
+        "Gained proficiency in programming languages including C++, C#, Java, Python, JavaScript, PHP, HTML, CSS, MATLAB, SQL, and GIT."
       ]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
 
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Programming",
-      progressPercentage: "95%"
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "90%"
-    },
-    {
-      Stack: "Computer Vision, Machine Learning & Deep Learning",
-      progressPercentage: "85%"
-    },
-    {
-      Stack: "Data Science and Analytics",
-      progressPercentage: "80%"
-    },
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "60%" //Insert relative proficiency in percentage
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true, // Set it to true to show workExperiences Section
   experience: [
     {
       role: "Team Lead - Backend / Data Science",
       company: "Ri Software",
       companylogo: require("./assets/images/riLogo.jpeg"),
       date: "April 2023 – February 2024",
-      desc: "At a Ukrainian-based software company, I led a team of back-end developers and data scientists, focusing on creating custom software solutions and algorithms that help businesses grow. During this time, I",
+      desc: "At Ri Software, a Ukrainian-based software company, I led a dedicated team of backend developers and data scientists in the creation of innovative custom software solutions aimed at driving business growth. My leadership focused on fostering collaboration and ensuring high-quality deliverables.",
       descBullets: [
-        "Collaborated closely with relevant stakeholders to ensure timely delivery of high-quality products",
-        "Managed frequent code deployments without causing downtime",
-        "Conducted thorough code reviews and provided constructive feedback to team members",
-        "Designed and implemented efficient back-end components to optimize application performance",
-        "Integrated advanced machine learning and deep learning algorithms into our offerings",
-        "Analyzed data and identified opportunities for improvement.",
-        "Created robust APIs supporting mobile and desktop clients",
-        "Worked alongside cross-functional teams to establish project goals and deliverables"
+        "Collaborated closely with stakeholders to guarantee timely delivery of high-quality products.",
+        "Managed regular code deployments while maintaining system uptime and reliability.",
+        "Conducted thorough code reviews, providing constructive feedback to enhance team performance.",
+        "Designed and implemented efficient backend components to optimize application performance.",
+        "Integrated advanced machine learning and deep learning algorithms into our software offerings.",
+        "Analyzed data to identify opportunities for improvement and innovation.",
+        "Developed robust APIs that support seamless functionality for mobile and desktop applications.",
+        "Worked alongside cross-functional teams to establish clear project goals and deliverables."
       ]
     },
   ]
@@ -228,16 +241,42 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "JYU Scholarship Award",
+      subtitle: "Awarded the JYU Scholarship for my academic excellence in the Master's program at the University of Jyväskylä.",
+      image: require("./assets/images/jyuLogo.png"), // Update with the actual logo or relevant image
+      imageAlt: "JYU Scholarship Logo",
+      footerLink: [
+        // {
+        //   name: "Scholarship Details",
+        //   url: "https://"
+        // }
+      ],
+      desc: "The JYU Scholarship covers 50% of my tuition fees for the Master's program, recognizing my commitment to academic excellence and progress in my studies. This scholarship not only alleviates financial burdens but also motivates me to continue striving for high performance in my academic pursuits."
+    },
+    {
+      title: "Fuzzy-Based Atrous Convolution for Brain Tumor Detection Using MRI",
+      subtitle: "Co-author of a research paper submitted to an IEEE journal, focusing on innovative AI techniques for medical imaging.",
+      image: require("./assets/images/ieeeLogo.png"), // Update with the actual logo or relevant image
+      imageAlt: "IEEE Journal Logo",
+      footerLink: [
+        // {
+        //   name: "Under Review",
+        //   url: "https://"
+        // }
+      ],
+      desc: "This research introduces the Fuzzy Atrous Convolution (FAC) model, enhancing brain tumor detection accuracy using MRI scans while significantly reducing the number of trainable parameters. The study demonstrates high classification accuracies across multiple datasets, showcasing the potential of fuzzy logic in improving AI adaptability and robustness in medical applications. As a co-author, I contributed to the development of the methodology and analysis of results, collaborating with a team of experts in the field."
+    },
+    {
       title: "Azure Developer Associate",
       subtitle:
         "I was a part of the Digital Skills and Global Certification Program conducted by the Gen Web Services.",
       image: require("./assets/images/azureLogo.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/1hdsLsFOwwQ5tORiQsCcOabDUjnt_WgIm/view?usp=sharing"
-        },
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/1hdsLsFOwwQ5tORiQsCcOabDUjnt_WgIm/view?usp=sharing"
+        // },
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
@@ -312,7 +351,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3020905006",
+  number: "+358-417422471",
   email_address: "hassanmehdi510@gmail.com"
 };
 
