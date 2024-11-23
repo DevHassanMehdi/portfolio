@@ -23,7 +23,7 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: emoji(
-    "I am a Master's student, specializing in AI at the University of Jyväskylä, Finland. My work focuses on innovative solutions in machine learning, computer vision, and backend development. Through this portfolio, I showcase my projects and contributions that reflect my passion for technology and problem-solving."
+    "I am a Master's student specializing in Artificial Intelligence at the University of Jyväskylä, Finland. My work focuses on innovative solutions in machine learning, computer vision, and backend development. I am proud to be the recipient of a gold medal for outstanding academic performance during my Bachelor’s degree in Computer Science. Through this portfolio, I showcase my projects and contributions that reflect my passion for technology and problem-solving."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1Mre7QUf1n9nsBj2VzA6UTqw-OafWIUtZ/view?usp=sharing", // Set to empty to hide the button
