@@ -235,11 +235,24 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Recognitions and Accomplishments 🏆📜"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "A SUMMARY OF MY ACHIEVEMENTS, PUBLICATIONS, AND CERTIFICATIONS!",
 
   achievementsCards: [
+    {
+      title: "Gold Medal Award",
+      subtitle: "Received for outstanding academic performance in my Bachelor's degree in Computer Science at Iqra National University.",
+      image: require("./assets/images/goldmedalLogo.png"), // Update with the actual logo or relevant image
+      imageAlt: "Gold Medal Logo",
+      footerLink: [
+        // {
+        //   name: "Award Details",
+        //   url: "https://"
+        // }
+      ],
+      desc: "The Gold Medal Award recognizes my dedication and hard work throughout my studies, culminating in achieving the highest CGPA in my batch. This honor motivates me to continue striving for excellence in my academic and professional endeavors."
+    },
     {
       title: "JYU Scholarship Award",
       subtitle: "Awarded the JYU Scholarship for my academic excellence in the Master's program at the University of Jyväskylä.",
