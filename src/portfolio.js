@@ -246,38 +246,39 @@ const achievementSection = {
       image: require("./assets/images/goldmedalLogo.png"), // Update with the actual logo or relevant image
       imageAlt: "Gold Medal Logo",
       footerLink: [
-        // {
-        //   name: "Award Details",
-        //   url: "https://"
-        // }
+         {
+           name: "Gold Medal Certificate",
+           url: "https://drive.google.com/file/d/1IZjJ9BccqxCm_dp_mNp8mLxok8LDVL3W/view?usp=drive_link"
+         }
       ],
       desc: "The Gold Medal Award recognizes my dedication and hard work throughout my studies, culminating in achieving the highest CGPA in my batch. This honor motivates me to continue striving for excellence in my academic and professional endeavors."
     },
+    {
+      title: "Best Paper In Theory & Methodology Award",
+      subtitle: "My recent publication received Best Paper In Theory & Methodology Award at The 2024 IEEE International Conference on Progress in Informatics and Computing",
+      image: require("./assets/images/ieeeLogo.png"), // Update with the actual logo or relevant image
+      imageAlt: "IEEE Journal Logo",
+      footerLink: [
+         {
+           name: "Certificate & First Page",
+           url: "https://drive.google.com/file/d/1KArmJBinwXFHftl39TW8eEVObLjmnu5X/view?usp=sharing"
+         }
+      ],
+      desc: "This research introduces the Fuzzy Atrous Convolution (FAC) model, enhancing brain tumor detection accuracy using MRI scans while significantly reducing the number of trainable parameters. The study demonstrates high classification accuracies across multiple datasets, showcasing the potential of fuzzy logic in improving AI adaptability and robustness in medical applications. As a co-author, I contributed to the development of the methodology and analysis of results, collaborating with a team of experts in the field."
+    },
+
     {
       title: "JYU Scholarship Award",
       subtitle: "Awarded the JYU Scholarship for my academic excellence in the Master's program at the University of Jyväskylä.",
       image: require("./assets/images/jyuLogo.png"), // Update with the actual logo or relevant image
       imageAlt: "JYU Scholarship Logo",
       footerLink: [
-        // {
-        //   name: "Scholarship Details",
-        //   url: "https://"
-        // }
+         {
+           name: "Scholarship Letter",
+           url: "https://drive.google.com/file/d/1pdotUcegOjTFgrutM_838y84hTkvPJsD/view?usp=sharing"
+         }
       ],
       desc: "The JYU Scholarship covers 50% of my tuition fees for the Master's program, recognizing my commitment to academic excellence and progress in my studies. This scholarship not only alleviates financial burdens but also motivates me to continue striving for high performance in my academic pursuits."
-    },
-    {
-      title: "Fuzzy-Based Atrous Convolution for Brain Tumor Detection Using MRI",
-      subtitle: "Co-author of a research paper submitted to an IEEE journal, focusing on innovative AI techniques for medical imaging.",
-      image: require("./assets/images/ieeeLogo.png"), // Update with the actual logo or relevant image
-      imageAlt: "IEEE Journal Logo",
-      footerLink: [
-        // {
-        //   name: "Under Review",
-        //   url: "https://"
-        // }
-      ],
-      desc: "This research introduces the Fuzzy Atrous Convolution (FAC) model, enhancing brain tumor detection accuracy using MRI scans while significantly reducing the number of trainable parameters. The study demonstrates high classification accuracies across multiple datasets, showcasing the potential of fuzzy logic in improving AI adaptability and robustness in medical applications. As a co-author, I contributed to the development of the methodology and analysis of results, collaborating with a team of experts in the field."
     },
     {
       title: "Azure Developer Associate",
@@ -286,10 +287,10 @@ const achievementSection = {
       image: require("./assets/images/azureLogo.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
-        // {
-        //   name: "Certification",
-        //   url: "https://drive.google.com/file/d/1hdsLsFOwwQ5tORiQsCcOabDUjnt_WgIm/view?usp=sharing"
-        // },
+         {
+           name: "Certification",
+           url: "https://drive.google.com/file/d/1gH1zb16ms7QoS4glPHcJ24xLV8L5Rhy0/view?usp=sharing"
+         },
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
