@@ -91,31 +91,44 @@ https://fontawesome.com/icons?d=gallery */
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, // Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Python Programming",
+      Stack: "Python Development & Scripting",
       progressPercentage: "95%"
     },
     {
-      Stack: "Computer Vision, Machine Learning & Deep Learning",
+      Stack: "Deep Learning & Machine Learning (TensorFlow, Keras, scikit-learn)",
       progressPercentage: "90%"
     },
     {
-      Stack: "Backend Development (Flask, Django)",
+      Stack: "Computer Vision (YOLO, OpenCV, OCR, ResNet)",
       progressPercentage: "90%"
     },
     {
-      Stack: "Data Science and Analytics (Pandas, NumPy, Scikit-learn)",
+      Stack: "Data Science & Analytics (Pandas, NumPy, SciPy)",
       progressPercentage: "85%"
     },
     {
-      Stack: "Frontend Development (HTML, CSS, JavaScript, React)",
+      Stack: "API Development & Backend (Flask, FastAPI, Django)",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Smart UI Layout Systems (KiwiSolver, Constraint Engines)",
       progressPercentage: "80%"
+    },
+    {
+      Stack: "Frontend Technologies (HTML5, CSS3, JavaScript, React)",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "DevOps & Tools (Git, Docker, Bash, Postgres)",
+      progressPercentage: "75%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section; change your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
+
 
 // Education Section
 
