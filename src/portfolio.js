@@ -53,49 +53,37 @@ const skillsSection = {
   subTitle:
     "A VERSATILE PYTHON DEVELOPER WITH A DIVERSE SKILLSET IN ARTIFICIAL INTELLIGENCE, MACHINE LEARNING, AND SOFTWARE DEVELOPMENT.",
   skills: [
-    emoji("⚡ Develop AI models leveraging machine learning and deep learning principles."),
-    emoji("⚡ Create AI and computer vision applications tailored to specific business needs."),
-    emoji("⚡ Integrate AI capabilities into custom software solutions and APIs."),
-    emoji("⚡ Design robust APIs that ensure seamless functionality for mobile and desktop applications.")
-  ],
+  emoji("⚡ Develop and fine-tune deep learning models for object detection, classification, and layout inference."),
+  emoji("⚡ Train and deploy YOLO-based object detectors and ResNet-based font classifiers for real-world applications."),
+  emoji("⚡ Design and implement smart UI layout adaptation systems using constraint solvers like KiwiSolver."),
+  emoji("⚡ Build Flask and FastAPI services for AI model diagnostics, monitoring, and inference."),
+  emoji("⚡ Create AI-powered computer vision applications for OCR, image classification, and UI analytics."),
+  emoji("⚡ Perform data preprocessing, error analysis, and debugging for large-scale synthetic datasets."),
+  emoji("⚡ Integrate AI capabilities into automotive HMI tools and full-stack software products."),
+  emoji("⚡ Develop modular and scalable APIs that power both web and embedded AI applications.")
+],
 
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "php",
-      fontAwesomeClassname: "fab fa-php"
-    },
-    {
-      skillName: "git",
-      fontAwesomeClassname: "fab fa-git"
-    }
+  { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+  { skillName: "TensorFlow", fontAwesomeClassname: "fas fa-brain" },
+  { skillName: "Keras", fontAwesomeClassname: "fas fa-brain" },
+  { skillName: "OpenCV", fontAwesomeClassname: "fas fa-camera" },
+  { skillName: "YOLO", fontAwesomeClassname: "fas fa-crosshairs" },
+  { skillName: "KiwiSolver", fontAwesomeClassname: "fas fa-cogs" },
+  { skillName: "Flask", fontAwesomeClassname: "fas fa-flask" },
+  { skillName: "FastAPI", fontAwesomeClassname: "fas fa-bolt" },
+  { skillName: "SQL", fontAwesomeClassname: "fas fa-database" },
+  { skillName: "Git", fontAwesomeClassname: "fab fa-git" },
+  { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+  { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+  { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
+  { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
+  { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+  { skillName: "Linux / Bash", fontAwesomeClassname: "fas fa-terminal" }
   ],
   display: true // Set false to hide this section, defaults to true
 };
