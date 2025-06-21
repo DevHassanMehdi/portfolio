@@ -23,12 +23,13 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: emoji(
-  "I am a Master's student specializing in Artificial Intelligence at the University of Jyväskylä, Finland, with a focus on Computer Vision, Deep Learning, and Intelligent User Interfaces. Currently, I am working as an AI Engineer Trainee at Rightware Oy, a leading automotive UI software provider. I have contributed to advanced systems like smart layout adaptation, YOLO-based detection improvements, and font classification tools. I enjoy crafting impactful AI solutions that blend innovation with real-world utility."
+    "AI Master's student at the University of Jyväskylä, Finland, with hands-on experience in Computer Vision and Deep Learning. Currently at Rightware Oy as an AI Engineer Trainee, contributing to production-grade smart layout tools, object detection pipelines, and OCR solutions. Awarded a Gold Medal for academic excellence — a testament to both dedication and passion for this field."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1Mre7QUf1n9nsBj2VzA6UTqw-OafWIUtZ/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1Mre7QUf1n9nsBj2VzA6UTqw-OafWIUtZ/view?usp=sharing",
+  displayGreeting: true
 };
+
 
 // Social Media Links
 
@@ -49,19 +50,16 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "Core Competencies",
+  title: "What I Do",
   subTitle:
-    "A VERSATILE PYTHON DEVELOPER WITH A DIVERSE SKILLSET IN ARTIFICIAL INTELLIGENCE, MACHINE LEARNING, AND SOFTWARE DEVELOPMENT.",
+    "I’m a hands-on Python developer with a focus on AI, computer vision, and smart software systems. I enjoy building intelligent tools that actually work in the real world.",
   skills: [
-  emoji("⚡ Develop and fine-tune deep learning models for object detection, classification, and layout inference."),
-  emoji("⚡ Train and deploy YOLO-based object detectors and ResNet-based font classifiers for real-world applications."),
-  emoji("⚡ Design and implement smart UI layout adaptation systems using constraint solvers like KiwiSolver."),
-  emoji("⚡ Build Flask and FastAPI services for AI model diagnostics, monitoring, and inference."),
-  emoji("⚡ Create AI-powered computer vision applications for OCR, image classification, and UI analytics."),
-  emoji("⚡ Perform data preprocessing, error analysis, and debugging for large-scale synthetic datasets."),
-  emoji("⚡ Integrate AI capabilities into automotive HMI tools and full-stack software products."),
-  emoji("⚡ Develop modular and scalable APIs that power both web and embedded AI applications.")
-],
+    emoji("⚡ Build and train deep learning models for tasks like detection, classification, and OCR."),
+    emoji("⚡ Improve and deploy YOLO, ResNet, and OCR-based models into real products."),
+    emoji("⚡ Develop smart layout engines using constraint solvers like KiwiSolver."),
+    emoji("⚡ Create backend services and tools using Flask and FastAPI to serve and debug models."),
+    emoji("⚡ Combine AI with UI/UX logic to power adaptive interfaces and HMI systems.")
+  ],
 
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -94,36 +92,24 @@ const techStack = {
   viewSkillBars: true,
   experience: [
     {
-      Stack: "Python Development & Scripting",
+      Stack: "Python for AI, backend, and automation",
       progressPercentage: "95%"
     },
     {
-      Stack: "Deep Learning & Machine Learning (TensorFlow, Keras, scikit-learn)",
+      Stack: "Machine Learning & Deep Learning (TensorFlow, Keras, scikit-learn)",
       progressPercentage: "90%"
     },
     {
-      Stack: "Computer Vision (YOLO, OpenCV, OCR, ResNet)",
+      Stack: "Computer Vision with YOLO, OpenCV, and OCR",
       progressPercentage: "90%"
     },
     {
-      Stack: "Data Science & Analytics (Pandas, NumPy, SciPy)",
+      Stack: "API & Backend Development (Flask, FastAPI, Django)",
       progressPercentage: "85%"
     },
     {
-      Stack: "API Development & Backend (Flask, FastAPI, Django)",
-      progressPercentage: "85%"
-    },
-    {
-      Stack: "Smart UI Layout Systems (KiwiSolver, Constraint Engines)",
+      Stack: "Smart UI layout systems and constraint solvers",
       progressPercentage: "80%"
-    },
-    {
-      Stack: "Frontend Technologies (HTML5, CSS3, JavaScript, React)",
-      progressPercentage: "75%"
-    },
-    {
-      Stack: "DevOps & Tools (Git, Docker, Bash, Postgres)",
-      progressPercentage: "75%"
     }
   ],
   displayCodersrank: false
@@ -315,7 +301,7 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Gold Medal Award",
-      subtitle: "Received for outstanding academic performance in my Bachelor's degree in Computer Science at Iqra National University.",
+      subtitle: "Awarded for securing the highest CGPA in my Bachelor's degree in Computer Science at Iqra National University.",
       image: require("./assets/images/goldmedalLogo.png"), // Update with the actual logo or relevant image
       imageAlt: "Gold Medal Logo",
       footerLink: [
@@ -324,11 +310,11 @@ const achievementSection = {
         //   url: "https://"
         // }
       ],
-      desc: "The Gold Medal Award recognizes my dedication and hard work throughout my studies, culminating in achieving the highest CGPA in my batch. This honor motivates me to continue striving for excellence in my academic and professional endeavors."
+      desc: "Received in recognition of my academic excellence and top-ranking performance throughout my Bachelor's studies. This award reflects my discipline, curiosity, and long-standing passion for computer science."
     },
     {
       title: "JYU Scholarship Award",
-      subtitle: "Awarded the JYU Scholarship for my academic excellence in the Master's program at the University of Jyväskylä.",
+      subtitle: "Granted by the University of Jyväskylä, Finland, for academic excellence in the AI Master's program.",
       image: require("./assets/images/jyuLogo.png"), // Update with the actual logo or relevant image
       imageAlt: "JYU Scholarship Logo",
       footerLink: [
@@ -337,11 +323,11 @@ const achievementSection = {
         //   url: "https://"
         // }
       ],
-      desc: "The JYU Scholarship covers 50% of my tuition fees for the Master's program, recognizing my commitment to academic excellence and progress in my studies. This scholarship not only alleviates financial burdens but also motivates me to continue striving for high performance in my academic pursuits."
+      desc: "This merit-based scholarship covered 50% of my tuition fees and recognized my academic strength and potential in the field of Artificial Intelligence during my Master's studies in Finland."
     },
     {
       title: "Fuzzy-Based Atrous Convolution for Brain Tumor Detection Using MRI",
-      subtitle: "Co-author of a research paper submitted to an IEEE journal, focusing on innovative AI techniques for medical imaging.",
+      subtitle: "Co-authored research paper submitted to IEEE journal on AI-based medical imaging.",
       image: require("./assets/images/ieeeLogo.png"), // Update with the actual logo or relevant image
       imageAlt: "IEEE Journal Logo",
       footerLink: [
@@ -350,14 +336,14 @@ const achievementSection = {
         //   url: "https://"
         // }
       ],
-      desc: "This research introduces the Fuzzy Atrous Convolution (FAC) model, enhancing brain tumor detection accuracy using MRI scans while significantly reducing the number of trainable parameters. The study demonstrates high classification accuracies across multiple datasets, showcasing the potential of fuzzy logic in improving AI adaptability and robustness in medical applications. As a co-author, I contributed to the development of the methodology and analysis of results, collaborating with a team of experts in the field."
+      desc: "This study proposes a novel Fuzzy Atrous Convolution model to improve tumor detection accuracy in MRI scans while reducing model complexity. I contributed to the architecture and experimental analysis. The paper is currently under review by an IEEE journal."
     },
     {
       title: "Azure Developer Associate",
       subtitle:
-        "I was a part of the Digital Skills and Global Certification Program conducted by the Gen Web Services.",
+        "Earned via the Digital Skills and Global Certification Program by Gen Web Services.",
       image: require("./assets/images/azureLogo.png"),
-      imageAlt: "Google Code-In Logo",
+      imageAlt: "Azure Certification Logo",
       footerLink: [
         // {
         //   name: "Certification",
@@ -371,7 +357,8 @@ const achievementSection = {
         //   name: "Google Code-in Blog",
         //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
         // }
-      ]
+      ],
+      desc: "This certification validated my foundational cloud computing skills using Microsoft Azure, including hands-on experience with app services, functions, and CI/CD tools in real-world development scenarios."
     },
   ],
   display: true // Set false to hide this section, defaults to true
@@ -434,12 +421,13 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Get in Touch 📬"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+358-417422471",
+    "Whether you have an opportunity, a challenge, or just want to connect — feel free to reach out!",
+//  number: "+358-417422471",
   email_address: "hassanmehdi510@gmail.com"
 };
+
 
 // Twitter Section
 
