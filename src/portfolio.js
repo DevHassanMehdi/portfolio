@@ -162,33 +162,33 @@ const workExperiences = {
   company: "Rightware Oy",
   companylogo: require("./assets/images/rightwareLogo.png"),
   date: "March 2024 – August 2025",
-  desc: "Rightware Oy is a Helsinki-based pioneer in automotive HMI software tools, best known for their flagship product, Kanzi One. During my 4-month fixed-term traineeship, I was part of the AI initiatives driving innovation in layout intelligence and visual perception models.",
+  desc: "Rightware Oy is a Helsinki-based pioneer in automotive HMI software tools. During my 4-month fixed-term traineeship, I focused on AI initiatives that strengthened layout intelligence and visual perception models.",
   descBullets: [
-    "Improved and retrained YOLO-based object detection models previously built by external vendors, significantly enhancing accuracy and stability for in-house use.",
-    "Trained and evaluated custom ResNet-18 and ResNet-50 models for font classification using large-scale synthetic datasets tailored for the Kanzi Author ecosystem.",
+    "Improved and retrained object detection models, significantly enhancing accuracy and stability for in-house use.",
+    "Trained and evaluated custom ResNet-18 and ResNet-50 models for font classification using large-scale synthetic datasets tailored for UI needs.",
     "Developed multiple Flask-based diagnostic APIs and tools to analyze training performance, detect overfitting, and support debugging during model iteration cycles.",
     "Conducted deep error analysis and model introspection to guide architectural and data refinement decisions across model training pipelines.",
-    "Designed and implemented a smart layout adaptation engine using Kiwi Solver for Kanzi `.ka` UI files, ensuring resolution-aware UI behavior across display targets.",
+    "Designed and implemented a UI layout adaptation engine, ensuring resolution-aware UI behavior.",
     "Contributed to production-integrated HMI features in collaboration with senior engineers and UI toolchain architects."
   ],
   technologies: [
-    "YOLOv5/YOLOX for object detection refinement.",
-    "ResNet18/ResNet50 with TensorFlow/Keras for font classification.",
-    "Flask APIs for diagnostic tooling and debugging interface.",
-    "EasyOCR customization for visual text parsing.",
-    "KiwiSolver for constraint-based smart layout systems.",
-    "FastAPI, Kanzi .ka file parser, Git, JSON tools."
+    "YOLOv5/YOLOX",
+    "ResNet18/ResNet50 with TensorFlow/Keras",
+    "Flask-based APIs for diagnostics and introspection",
+    "Customized OCR modules using EasyOCR",
+    "Constraint-based logic systems for UI scaling",
+    "FastAPI, JSON parsing utilities, Git, and project configuration tools"
   ],
   mainFeatures: [
     "Seamless integration of AI-enhanced detection models into the HMI toolchain.",
     "Synthetic data-driven font classification framework with transfer learning backbone.",
     "Interactive diagnostic interfaces to inspect training outputs and dataset distributions.",
     "Robust UI layout scaling system powered by constraints and heuristics.",
-    "Improved tooling to support AI experimentation and embedding into Kanzi workflows."
+    "Improved tooling to support AI experimentation and embedding into HMI workflows."
   ],
   summary:
-    "At Rightware Oy, I focused on training, evaluating, and deploying AI models for object detection and font recognition within the Kanzi Author platform. My contributions helped internal teams transition to stronger, production-ready ML models and enabled new smart UI behavior via layout adaptation. I developed tools, fine-tuned architectures, and solved complex AI pipeline challenges in a fast-paced product environment."
-    },
+    "At Rightware Oy, I focused on training, evaluating, and deploying AI models for object detection and font recognition within the Kanzi platform. My work helped teams transition to stronger, production-ready ML models while enabling UI layout adaptation. I developed tools, fine-tuned architectures, and solved complex AI pipeline challenges in a fast-paced environment."
+},
     {
       role: "Team Lead - Backend / Data Science",
       company: "Ri Software",
