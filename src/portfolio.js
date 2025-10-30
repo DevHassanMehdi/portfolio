@@ -305,25 +305,12 @@ const achievementSection = {
       image: require("./assets/images/goldmedalLogo.png"), // Update with the actual logo or relevant image
       imageAlt: "Gold Medal Logo",
       footerLink: [
-        // {
-        //   name: "Award Details",
-        //   url: "https://"
-        // }
+         {
+           name: "Certificate",
+           url: "https://drive.google.com/file/d/1IZjJ9BccqxCm_dp_mNp8mLxok8LDVL3W/view?usp=sharing"
+         }
       ],
       desc: "Received in recognition of my academic excellence and top-ranking performance throughout my Bachelor's studies. This award reflects my discipline, curiosity, and long-standing passion for computer science."
-    },
-    {
-      title: "JYU Scholarship Award",
-      subtitle: "Granted by the University of Jyväskylä, Finland, for academic excellence in the AI Master's program.",
-      image: require("./assets/images/jyuLogo.png"), // Update with the actual logo or relevant image
-      imageAlt: "JYU Scholarship Logo",
-      footerLink: [
-        // {
-        //   name: "Scholarship Details",
-        //   url: "https://"
-        // }
-      ],
-      desc: "This merit-based scholarship covered 50% of my tuition fees and recognized my academic strength and potential in the field of Artificial Intelligence during my Master's studies in Finland."
     },
     {
       title: "Fuzzy-Based Atrous Convolution for Brain Tumor Detection Using MRI",
@@ -331,12 +318,38 @@ const achievementSection = {
       image: require("./assets/images/ieeeLogo.png"), // Update with the actual logo or relevant image
       imageAlt: "IEEE Journal Logo",
       footerLink: [
-        // {
-        //   name: "Under Review",
-        //   url: "https://"
-        // }
+         {
+           name: "Certificate",
+           url: "https://drive.google.com/file/d/1KArmJBinwXFHftl39TW8eEVObLjmnu5X/view?usp=sharing"
+         }
       ],
       desc: "This study proposes a novel Fuzzy Atrous Convolution model to improve tumor detection accuracy in MRI scans while reducing model complexity. I contributed to the architecture and experimental analysis. The paper is currently under review by an IEEE journal."
+    },
+    {
+      title: "JYU Scholarship Award",
+      subtitle: "Granted by the University of Jyväskylä, Finland, for academic excellence in the AI Master's program.",
+      image: require("./assets/images/jyuLogo.png"), // Update with the actual logo or relevant image
+      imageAlt: "JYU Scholarship Logo",
+      footerLink: [
+         {
+           name: "Certificate",
+           url: "https://drive.google.com/file/d/1pdotUcegOjTFgrutM_838y84hTkvPJsD/view?usp=sharing"
+         }
+      ],
+      desc: "This merit-based scholarship covered 50% of my tuition fees and recognized my academic strength and potential in the field of Artificial Intelligence during my Master's studies in Finland."
+    },
+    {
+      title: "Degree Tutor – University of Jyväskylä",
+      subtitle: "Guided new international degree students during autumn 2025.",
+      image: require("./assets/images/jyyLogo.png"), // Replace with the actual University of Jyväskylä logo or relevant image
+      imageAlt: "University of Jyväskylä Logo",
+      footerLink: [
+         {
+           name: "Certificate",
+           url: "https://drive.google.com/file/d/1yuB4AV57TvEVZmWnvMf4oCDZ-vxqWIPK/view?usp=sharing"
+         }
+      ],
+      desc: "Acted as a degree tutor in a group leading role for new students at the University of Jyväskylä. The role involved mentoring up to 10 students, providing academic and social guidance, and supporting their transition into university life. Completed official tutor training focused on group dynamics, leadership, and intercultural communication."
     },
     {
       title: "Azure Developer Associate",
@@ -345,10 +358,10 @@ const achievementSection = {
       image: require("./assets/images/azureLogo.png"),
       imageAlt: "Azure Certification Logo",
       footerLink: [
-        // {
-        //   name: "Certification",
-        //   url: "https://drive.google.com/file/d/1hdsLsFOwwQ5tORiQsCcOabDUjnt_WgIm/view?usp=sharing"
-        // },
+         {
+           name: "Certification",
+           url: "https://drive.google.com/file/d/1gH1zb16ms7QoS4glPHcJ24xLV8L5Rhy0/view?usp=sharing"
+         },
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
