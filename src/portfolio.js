@@ -23,7 +23,7 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: emoji(
-    "AI Master's student at the University of Jyväskylä, Finland, with hands-on experience in Computer Vision and Deep Learning. Currently at Rightware Oy as an AI Engineer Trainee, contributing to production-grade smart layout tools, object detection pipelines, and OCR solutions. Awarded a Gold Medal for academic excellence — a testament to both dedication and passion for this field."
+    "I study Master’s in AI at the University of Jyväskylä. I recently worked at Rightware Oy as an AI Engineer Trainee, where I focused on computer vision and deep learning projects. I was awarded a Gold Medal for academic excellence during my bachelor’s studies. I enjoy working with computer vision, deep learning, and generative models. I build AI systems that connect ideas to real-world use."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1Mre7QUf1n9nsBj2VzA6UTqw-OafWIUtZ/view?usp=sharing",
@@ -57,7 +57,7 @@ const skillsSection = {
     emoji("⚡ Build and train deep learning models for tasks like detection, classification, and OCR."),
     emoji("⚡ Improve and deploy YOLO, ResNet, and OCR-based models into real products."),
     emoji("⚡ Develop smart layout engines using constraint solvers like KiwiSolver."),
-    emoji("⚡ Create backend services and tools using Flask and FastAPI to serve and debug models."),
+    emoji("⚡ Create backend services and tools using Flask and FastAPI."),
     emoji("⚡ Combine AI with UI/UX logic to power adaptive interfaces and HMI systems.")
   ],
 
@@ -92,24 +92,20 @@ const techStack = {
   viewSkillBars: true,
   experience: [
     {
-      Stack: "Python for AI, backend, and automation",
+      Stack: "Python for AI, Machine Learning & Deep Learning (TensorFlow, Keras, scikit-learn)",
       progressPercentage: "95%"
-    },
-    {
-      Stack: "Machine Learning & Deep Learning (TensorFlow, Keras, scikit-learn)",
-      progressPercentage: "90%"
     },
     {
       Stack: "Computer Vision with YOLO, OpenCV, and OCR",
       progressPercentage: "90%"
     },
     {
-      Stack: "API & Backend Development (Flask, FastAPI, Django)",
-      progressPercentage: "85%"
+      Stack: "API & Backend Development (Flask, FastAPI)",
+      progressPercentage: "90%"
     },
     {
       Stack: "Smart UI layout systems and constraint solvers",
-      progressPercentage: "80%"
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: false
@@ -125,10 +121,10 @@ const educationInfo = {
       schoolName: "University of Jyväskylä",
       logo: require("./assets/images/jyuLogo.png"), // Update with the actual logo path
       subHeader: "Master of Science in Artificial Intelligence",
-      duration: "Expected Graduation: September 2026",
+      duration: "Expected Graduation: June 2026",
       desc: "Currently pursuing a Master's degree with a focus on advanced AI techniques and applications.",
       descBullets: [
-        "Studying cutting-edge topics in Machine Learning, Deep Learning, and Computer Vision.",
+        "Studying advance techniques in Machine Learning, Deep Learning, and Computer Vision.",
         "Participating in collaborative research projects with faculty and industry experts.",
         "Engaging in practical applications of AI through coursework and hands-on projects."
       ]
@@ -194,7 +190,7 @@ const workExperiences = {
       company: "Ri Software",
       companylogo: require("./assets/images/riLogo.jpeg"),
       date: "April 2023 – February 2024",
-      desc: "At Ri Software, a Ukrainian-based software company, I led a dedicated team of backend developers and data scientists in the creation of innovative custom software solutions aimed at driving business growth.",
+      desc: "At Ri Software, a Ukrain-based software company, I led a dedicated team of backend developers and data scientists in the creation of innovative custom software solutions aimed at driving business growth.",
       descBullets: [
         "Collaborated closely with stakeholders to guarantee timely delivery of high-quality products.",
         "Managed regular code deployments while maintaining system uptime and reliability.",
@@ -249,7 +245,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "AS A DILIGENT COMPUTER SCIENTIST, I HAVE BEEN INVOLVED IN SEVERAL IMPACTFUL PROJECTS, INCLUDING",
+  subtitle: "AS A DILIGENT COMPUTER SCIENTIST, I'VE BEEN INVOLVED IN SEVERAL IMPACTFUL PROJECTS, INCLUDING",
   projects: [
     {
   image: require("./assets/images/rightwareLogo.png"),
@@ -436,7 +432,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Get in Touch 📬"),
   subtitle:
-    "Whether you have an opportunity, a challenge, or just want to connect — feel free to reach out!",
+    "Whether you have an opportunity, a challenge, or just want to connect, feel free to reach out!",
 //  number: "+358-417422471",
   email_address: "hassanmehdi510@gmail.com"
 };
