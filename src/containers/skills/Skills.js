@@ -40,7 +40,6 @@ export default function Skills() {
                   ? "dark-mode subTitle skills-text-subtitle"
                   : "subTitle skills-text-subtitle"
               }
-              style={{ textAlign: 'justify' }} // Justification applied here
             >
               {skillsSection.subTitle}
             </p>

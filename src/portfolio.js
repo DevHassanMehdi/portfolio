@@ -221,14 +221,15 @@ const bigProjects = {
 subtitle: "A selection of my most impactful AI & computer-vision projects.",
 projects: [
   {
+    // image: require("./assets/images/imageupliftLogo.png"),
     projectName: "ImageUpLift – AI Image Enhancer & Converter",
     projectDesc:
       "An AI-powered image enhancement and conversion web tool. Users can upload images, choose modes (enhance, vectorize, outline), preview results, track conversion history and view analytics. Built with FastAPI backend, AI pipelines (using CLIP / ESRGAN / OpenCV), and React-based frontend.",
-    projectHighlights: [
-      "Enhance, vectorize, and outline modes with preview and history tracking.",
-      "FastAPI backend orchestrating CLIP / ESRGAN / OpenCV pipelines.",
-      "Frontend built with React; includes conversion analytics and session controls."
-    ],
+    // projectHighlights: [
+    //   "Enhance, vectorize, and outline modes with preview and history tracking.",
+    //   "FastAPI backend orchestrating CLIP / ESRGAN / OpenCV pipelines.",
+    //   "Frontend built with React; includes conversion analytics and session controls."
+    // ],
     techStack: ["FastAPI", "ESRGAN", "OpenCV", "CLIP", "React", "Docker"],
     footerLink: [
       {
@@ -238,14 +239,15 @@ projects: [
     ]
   },
   {
+    // image: require("./assets/images/dndsLogo.png"),
     projectName: "Driving Negligence Dissuader System (DNDS)",
     projectDesc:
       "A real-time computer-vision system for detecting driver drowsiness, lane deviation, and nearby objects (vehicles, animals, pedestrians). Built with OpenCV and YOLO, the system alerts drivers to improve road safety.",
-    projectHighlights: [
-      "YOLO-based detection for lanes, vehicles, pedestrians, and obstacles.",
-      "Drowsiness detection via facial landmarks and eye-aspect ratio monitoring.",
-      "Real-time alerting pipeline with configurable sensitivity for road safety."
-    ],
+    // projectHighlights: [
+    //   "YOLO-based detection for lanes, vehicles, pedestrians, and obstacles.",
+    //   "Drowsiness detection via facial landmarks and eye-aspect ratio monitoring.",
+    //   "Real-time alerting pipeline with configurable sensitivity for road safety."
+    // ],
     techStack: ["YOLO", "OpenCV", "Python", "TensorFlow", "Raspberry Pi"],
     footerLink: [
       {
