@@ -54,11 +54,11 @@ const skillsSection = {
   subTitle:
     "I’m a hands-on Python developer with a focus on AI, computer vision, and smart software systems. I enjoy building intelligent tools that actually work in the real world.",
   skills: [
-    emoji("⚡ Build and train deep learning models for tasks like detection, classification, and OCR."),
-    emoji("⚡ Improve and deploy YOLO, ResNet, and OCR-based models into real products."),
-    emoji("⚡ Develop smart layout engines using constraint solvers like KiwiSolver."),
-    emoji("⚡ Create backend services and tools using Flask and FastAPI to serve and debug models."),
-    emoji("⚡ Combine AI with UI/UX logic to power adaptive interfaces and HMI systems.")
+    emoji("Build and train deep learning models for tasks like detection, classification, and OCR."),
+    emoji("Improve and deploy YOLO, ResNet, and OCR-based models into real products."),
+    emoji("Develop smart layout engines using constraint solvers like KiwiSolver."),
+    emoji("Create backend services and tools using Flask and FastAPI to serve and debug models."),
+    emoji("Combine AI with UI/UX logic to power adaptive interfaces and HMI systems.")
   ],
 
 
@@ -313,19 +313,6 @@ const achievementSection = {
       desc: "Received in recognition of my academic excellence and top-ranking performance throughout my Bachelor's studies. This award reflects my discipline, curiosity, and long-standing passion for computer science."
     },
     {
-      title: "Fuzzy-Based Atrous Convolution for Brain Tumor Detection Using MRI",
-      subtitle: "Co-authored research paper submitted to IEEE journal on AI-based medical imaging.",
-      image: require("./assets/images/ieeeLogo.png"), // Update with the actual logo or relevant image
-      imageAlt: "IEEE Journal Logo",
-      footerLink: [
-         {
-           name: "Certificate",
-           url: "https://drive.google.com/file/d/1KArmJBinwXFHftl39TW8eEVObLjmnu5X/view?usp=sharing"
-         }
-      ],
-      desc: "This study proposes a novel Fuzzy Atrous Convolution model to improve tumor detection accuracy in MRI scans while reducing model complexity. I contributed to the architecture and experimental analysis. The paper is currently under review by an IEEE journal."
-    },
-    {
       title: "JYU Scholarship Award",
       subtitle: "Granted by the University of Jyväskylä, Finland, for academic excellence in the AI Master's program.",
       image: require("./assets/images/jyuLogo.png"), // Update with the actual logo or relevant image
@@ -337,6 +324,19 @@ const achievementSection = {
          }
       ],
       desc: "This merit-based scholarship covered 50% of my tuition fees and recognized my academic strength and potential in the field of Artificial Intelligence during my Master's studies in Finland."
+    },
+    {
+      title: "Fuzzy-Based Atrous Convolution for Brain Tumor Detection Using MRI",
+      subtitle: "Co-authored research paper submitted to IEEE journal on AI-based medical imaging.",
+      image: require("./assets/images/ieeeLogo.png"), // Update with the actual logo or relevant image
+      imageAlt: "IEEE Journal Logo",
+      footerLink: [
+         {
+           name: "Certificate",
+           url: "https://drive.google.com/file/d/1KArmJBinwXFHftl39TW8eEVObLjmnu5X/view?usp=sharing"
+         }
+      ],
+      desc: "This study proposes a novel Fuzzy Atrous Convolution model to improve tumor detection accuracy in MRI scans while reducing model complexity. I contributed to the architecture and experimental analysis. The paper is currently under review by an IEEE journal."
     },
     {
       title: "Degree Tutor – University of Jyväskylä",

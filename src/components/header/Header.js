@@ -7,20 +7,29 @@ import {
   greeting,
   workExperiences,
   skillsSection,
+  educationInfo,
   openSource,
   blogSection,
   talkSection,
-  achievementSection
+  achievementSection,
+  bigProjects,
+  twitterDetails,
+  podcastSection
 } from "../../portfolio";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
+  const viewGreeting = greeting.displayGreeting;
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
+  const viewEducation = educationInfo.display;
   const viewAchievement = achievementSection.display;
+  const viewProjects = bigProjects.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
+  const viewTwitter = twitterDetails.display;
+  const viewPodcast = podcastSection.display;
 
   return (
     <Headroom>
@@ -39,6 +48,11 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
+          {viewGreeting && (
+            <li>
+              <a href="#greeting">Greeting</a>
+            </li>
+          )}
           {viewSkills && (
             <li>
               <a href="#skills">Skills</a>
@@ -49,14 +63,24 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {viewOpenSource && (
+          {viewEducation && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#education">Education</a>
             </li>
           )}
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
+            </li>
+          )}
+          {viewProjects && (
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+          )}
+          {viewOpenSource && (
+            <li>
+              <a href="#opensource">Open Source</a>
             </li>
           )}
           {viewBlog && (
@@ -67,6 +91,16 @@ function Header() {
           {viewTalks && (
             <li>
               <a href="#talks">Talks</a>
+            </li>
+          )}
+          {viewTwitter && (
+            <li>
+              <a href="#twitter">Twitter</a>
+            </li>
+          )}
+          {viewPodcast && (
+            <li>
+              <a href="#podcast">Podcast</a>
             </li>
           )}
           <li>
