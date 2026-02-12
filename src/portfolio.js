@@ -1,4 +1,4 @@
-/* Change this file to get your personal Portfolio */
+﻿/* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
 
@@ -23,7 +23,7 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: emoji(
-    "I recently worked at Rightware Oy, Helsinki as a Junior AI Engineer on computer vision and deep learning projects. I’m now completing my Master’s in Artificial Intelligence at the University of Jyväskylä, Finland. I am also a proud recipient of a Gold Medal for my academic excellence."
+    "I recently worked at Rightware Oy, Helsinki as a Junior AI Engineer on computer vision and deep learning projects. I'm now completing my Master’s in Artificial Intelligence at the University of Jyväskylä and currently focused on my thesis. I'm also a Gold Medal recipient for academic excellence, and I'm looking for work opportunities in AI, computer vision, and machine learning."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1Mre7QUf1n9nsBj2VzA6UTqw-OafWIUtZ/view?usp=sharing",
@@ -163,11 +163,11 @@ const workExperiences = {
   display: true, // Set it to true to show workExperiences Section
   experience: [
   {
-    role: "Junior AI Engineer – Helsinki, Finland",
+    role: "AI Engineer Trainee – Helsinki, Finland",
     company: "Rightware Oy",
     companylogo: require("./assets/images/rightwareLogo.png"),
     date: "April 2024 – August 2024",
-    desc: "Worked on AI and computer vision projects for automotive HMI systems at a leading automotive UX software company.",
+    desc: "I worked on AI and computer vision projects for automotive HMI systems at a leading automotive UX software company.",
     descBullets: [
       "Improved YOLO-based object detection models used in automotive interface tooling.",
       "Developed and trained ResNet-based classifiers for font and UI element recognition.",
@@ -188,7 +188,7 @@ const workExperiences = {
   company: "Ri Software",
   companylogo: require("./assets/images/riLogo.jpeg"),
   date: "April 2023 – February 2024",
-  desc: "Worked as a Backend and AI Developer in a startup building an integrated business management platform.",
+  desc: "I worked as a Backend and AI Developer in a startup company, building an integrated business management platform.",
   descBullets: [
     "Developed backend architecture and REST APIs using Python and Flask.",
     "Built AI-driven features, including prediction models, analytics modules, and recommendation systems.",
@@ -201,7 +201,7 @@ const workExperiences = {
     "PostgreSQL", "OpenCV", "Matplotlib", "Git"
   ],
   summary:
-    "Worked across AI development, backend engineering, frontend features, and database management to help build a scalable, data-driven platform in a fast-moving startup environment."
+    "At RI-Software, I worked across AI development, backend engineering, frontend features, and database management to help build a scalable, data-driven platform in a fast-moving startup environment."
 }
 ]
 };
@@ -328,7 +328,7 @@ achievementsCards: [
     imageAlt: "Azure Certification Logo",
     footerLink: [
       {
-        name: "Certification",
+        name: "Certificate",
         url: "https://drive.google.com/file/d/1gH1zb16ms7QoS4glPHcJ24xLV8L5Rhy0/view?usp=sharing"
       }
     ],
@@ -399,7 +399,7 @@ const contactInfo = {
   subtitle:
     "Whether you have an opportunity, a challenge, or just want to connect, feel free to reach out!",
 //  number: "+358-417422471",
-  email_address: "hassanmehdi510@gmail.com"
+  email_address: "itshmehdi@gmail.com"
 };
 
 
