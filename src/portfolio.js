@@ -23,7 +23,7 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: emoji(
-    "I'm an AI Engineer focusing on computer vision and deep learning. Currently researching sleep data harmonization as part of the AI4Hope project at JYU, in collaboration with the University of Turku. Previously at Rightware Oy in Helsinki, I improved object detection accuracy from 64% to 83% and shipped production-level AI features for Kanzi. I'm a published IEEE researcher, and I'm actively looking for AI and ML roles in Finland."
+    "I'm an AI Engineer focusing on computer vision, deep learning, and backend development. I'm completing my MSc in Artificial Intelligence at the University of Jyväskylä, with my thesis on sleep data harmonization as part of the AI4Hope project. Previously at Rightware Oy in Helsinki, I improved object detection accuracy from 64% to 83% and shipped production-level AI features for Kanzi. I'm a published IEEE researcher and actively looking for AI and ML roles in Finland."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1Mre7QUf1n9nsBj2VzA6UTqw-OafWIUtZ/view?usp=sharing",
