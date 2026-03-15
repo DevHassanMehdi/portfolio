@@ -23,7 +23,7 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: emoji(
-    "I'm an AI Engineer working on computer vision, deep learning, and backend development. I enjoy taking ideas all the way from prototype to production, and I'm looking for my next opportunity in Finland."
+    "I'm an AI Engineer focusing on computer vision and deep learning. Currently researching sleep data harmonization as part of the AI4Hope project at JYU, in collaboration with the University of Turku. Previously at Rightware Oy in Helsinki, I improved object detection accuracy from 64% to 83% and shipped production-level AI features for Kanzi. I'm a published IEEE researcher, and I'm actively looking for AI and ML roles in Finland."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1Mre7QUf1n9nsBj2VzA6UTqw-OafWIUtZ/view?usp=sharing",
@@ -130,8 +130,8 @@ const educationInfo = {
     duration: "Expected Graduation: July 2026",
     desc: "Pursuing a Master's degree focused on modern AI systems and applied machine learning.",
     descBullets: [
+      "Conducting thesis research on sleep data harmonization and ML model evaluation as part of the AI4Hope project, in collaboration with the University of Turku.",
       "Studying advanced topics in Machine Learning, Deep Learning, and Computer Vision.",
-      "Working on AI research projects involving ML models, data-driven systems, and real-world applications.",
       "Building practical AI solutions through coursework, team projects, and industry collaborations."
     ]
   },
