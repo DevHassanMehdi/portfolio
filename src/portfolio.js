@@ -23,7 +23,7 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: emoji(
-    "I recently worked at Rightware Oy, Helsinki as an AI Engineer Trainee on computer vision and deep learning projects. I'm now completing my Master’s in Artificial Intelligence at the University of Jyväskylä and currently focused on my thesis. I'm also a Gold Medal recipient for academic excellence, and I'm looking for work opportunities in AI, computer vision, and machine learning."
+    "I'm an AI Engineer working on computer vision, deep learning, and backend development. I enjoy taking ideas all the way from prototype to production, and I'm looking for my next opportunity in Finland."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1Mre7QUf1n9nsBj2VzA6UTqw-OafWIUtZ/view?usp=sharing",
@@ -34,7 +34,7 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  gmail: "hassanmehdi510@gmail.com",
+  gmail: "itshmehdi@gmail.com",
   github: "https://github.com/DevHassanMehdi",
   linkedin: "https://www.linkedin.com/in/devhassanmehdi/",
   facebook: "https://www.facebook.com/devhassanmehdi/",
@@ -51,13 +51,12 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I Do",
-  subTitle:
-    "I’m a software developer focused on AI, computer vision, and modern ML systems. My main strength is building intelligent applications, and I also work confidently across backend, frontend, and full-stack development.",
+  subTitle: "I build AI systems that ship. My focus is computer vision and deep learning, and I back it up with solid backend development and clean data pipelines.",
   skills: [
-    emoji("Develop AI systems, including deep learning, computer vision, generative AI, and LLM-based solutions."),
-    emoji("Build backend APIs and services with Python, FastAPI, and Flask."),
-    emoji("Create full-stack features using Node.js, TypeScript, and React."),
-    emoji("Design and manage SQL databases and implement clean, reliable data pipelines.")
+    emoji("Train and deploy computer vision models for real production environments, including object detection, image classification, and OCR pipelines."),
+    emoji("Build and ship backend APIs and services using Python, FastAPI, and Flask."),
+    emoji("Design data pipelines and manage SQL databases to support ML workflows and analytics."),
+    emoji("Contribute across the full stack using Node.js, TypeScript, and React when the project needs it.")
   ],
 
 
@@ -71,7 +70,7 @@ softwareSkills: [
   { skillName: "TensorFlow", fontAwesomeClassname: "fas fa-brain" },
   { skillName: "OpenCV", fontAwesomeClassname: "fas fa-camera" },
   { skillName: "YOLO", fontAwesomeClassname: "fas fa-crosshairs" },
-  { skillName: "Generative AI / LLMs", fontAwesomeClassname: "fas fa-robot" },
+  { skillName: "scikit-learn", fontAwesomeClassname: "fas fa-robot" },
 
   // Backend
   { skillName: "FastAPI", fontAwesomeClassname: "fas fa-bolt" },
@@ -99,23 +98,19 @@ const techStack = {
   experience: [
   {
     Stack: "AI, Machine Learning & Deep Learning (PyTorch, TensorFlow, scikit-learn)",
-    progressPercentage: "95%"
+    progressPercentage: "82%"
   },
   {
     Stack: "Computer Vision (YOLO, OpenCV, OCR)",
-    progressPercentage: "90%"
-  },
-  {
-    Stack: "Generative AI & LLM Development (LangChain, modern AI frameworks)",
-    progressPercentage: "85%"
+    progressPercentage: "88%"
   },
   {
     Stack: "Backend Development (Python, FastAPI, Flask)",
-    progressPercentage: "90%"
+    progressPercentage: "78%"
   },
   {
     Stack: "Full-Stack Development (Node.js, TypeScript, React)",
-    progressPercentage: "80%"
+    progressPercentage: "60%"
   }
 ]
 ,
@@ -132,7 +127,7 @@ const educationInfo = {
     schoolName: "University of Jyväskylä",
     logo: require("./assets/images/jyuLogo.png"),
     subHeader: "Master of Science in Artificial Intelligence",
-    duration: "Expected Graduation: June 2026",
+    duration: "Expected Graduation: July 2026",
     desc: "Pursuing a Master's degree focused on modern AI systems and applied machine learning.",
     descBullets: [
       "Studying advanced topics in Machine Learning, Deep Learning, and Computer Vision.",
@@ -166,43 +161,23 @@ const workExperiences = {
     role: "AI Engineer Trainee – Helsinki, Finland",
     company: "Rightware Oy",
     companylogo: require("./assets/images/rightwareLogo.png"),
-    date: "April 2024 – August 2024",
-    desc: "I worked on AI and computer vision projects for automotive HMI systems at a leading automotive UX software company.",
+    date: "April 2025 – August 2025",
+    desc: "I worked on production-level AI and computer vision systems for Kanzi, one of the world's leading automotive HMI tools, used by major car manufacturers globally.",
     descBullets: [
-      "Improved YOLO-based object detection models used in automotive interface tooling.",
-      "Developed and trained ResNet-based classifiers for font and UI element recognition.",
-      "Built diagnostic tools and backend utilities using Flask and FastAPI for model evaluation and debugging.",
-      "Designed a UI layout adaptation system using constraint logic to ensure resolution-responsive behavior.",
-      "Collaborated with senior engineers to integrate ML features into the Kanzi HMI toolchain."
+      "Object Detection: Improved object detection accuracy from 64% to 83% by migrating from YOLOv7-small to YOLOX-medium and introducing custom dataset augmentation, while maintaining real-time inference at ~30fps. The migration also resolved a licensing conflict, making the feature commercially viable for Rightware's clients.",
+      "Font Recognition: Built a font classification pipeline trained on 30,000 synthetic images from Google's top 500 font library. Modified ResNet50 architecture to accept greyscale inputs, achieving 68% accuracy on ~1,000 real-world gauge cluster images — the first automated font recognition feature of its kind at Rightware.",
+      "Layout Adaptation: Designed a resolution adaptation tool using Kiwisolver that recursively parsed and adjusted all UI elements in Kanzi .ka project files, reducing what previously required a full day of manual redesign to approximately 3 seconds.",
+      "Toolchain & Collaboration: Collaborated with 2 senior engineers to deliver a core commercial feature spanning 55+ UI element types. Developed shared visualisation and debugging scripts using Matplotlib and OpenCV, adopted across the development team.",
+      "Stakeholder Demos: Demoed features live to internal teams and client stakeholders in biweekly showcases alongside the CEO, presenting production-ready AI tooling to potential clients."
     ],
     technologies: [
       "Python", "PyTorch", "TensorFlow/Keras", "YOLO", "ResNet", "OpenCV",
       "Flask", "FastAPI", "EasyOCR", "KiwiSolver", "Git"
     ],
     summary:
-      "At Rightware, I contributed to improving visual perception models and intelligent layout systems while building tools and workflows to support ML experimentation and integration."
+      "I shipped production AI features for automotive clients and presented them directly to stakeholders alongside our CEO."
   },
 
-  {
-  role: "Backend & AI (Startup) – kyiv ukraine",
-  company: "Ri Software",
-  companylogo: require("./assets/images/riLogo.jpeg"),
-  date: "April 2023 – February 2024",
-  desc: "I worked as a Backend and AI Developer in a startup company, building an integrated business management platform.",
-  descBullets: [
-    "Developed backend architecture and REST APIs using Python and Flask.",
-    "Built AI-driven features, including prediction models, analytics modules, and recommendation systems.",
-    "Contributed to frontend development using Node.js and TypeScript for dashboards and user-facing components.",
-    "Designed and managed the PostgreSQL database, ensuring efficient queries and smooth integration with backend services.",
-  ],
-  technologies: [
-    "Flask", "Pandas", "NumPy", "SciPy",
-    "Node.js", "TypeScript", "React",
-    "PostgreSQL", "OpenCV", "Matplotlib", "Git"
-  ],
-  summary:
-    "At RI-Software, I worked across AI development, backend engineering, frontend features, and database management to help build a scalable, data-driven platform in a fast-moving startup environment."
-}
 ]
 };
 

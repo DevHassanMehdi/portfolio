@@ -19,14 +19,25 @@ export default function ExperienceCard({ cardInfo, isDark }) {
 
   const GetDescBullets = ({ descBullets, isDark }) => {
     return descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
+      ? descBullets.map((item, i) => {
+          const colonIndex = item.indexOf(": ");
+          const hasBoldPrefix = colonIndex !== -1 && colonIndex < 40;
+          return (
+            <li
+              key={i}
+              className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+            >
+              {hasBoldPrefix ? (
+                <>
+                  <strong>{item.slice(0, colonIndex + 1)}</strong>
+                  {item.slice(colonIndex + 1)}
+                </>
+              ) : (
+                item
+              )}
+            </li>
+          );
+        })
       : null;
   };
 
