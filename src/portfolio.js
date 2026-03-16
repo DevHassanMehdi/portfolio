@@ -177,6 +177,26 @@ const workExperiences = {
     summary:
       "I shipped production AI features for automotive clients and presented them directly to stakeholders alongside our CEO."
   },
+  {
+    role: "Backend & AI Engineer – Remote, Ukraine",
+    company: "Ri Software (Startup)",
+    companylogo: require("./assets/images/riLogo.jpeg"),
+    date: "April 2023 – February 2024",
+    desc: "I worked as a Backend and AI Engineer at an early-stage startup building an AI-driven business management platform designed to replace expensive data analyst roles for small businesses, covering sales forecasting, inventory management, HR automation, and ROI tracking.",
+    descBullets: [
+      "Platform Development: Built backend architecture and REST APIs using Python and Flask, serving 50 beta clients across sales, inventory, HR automation, and ROI tracking features.",
+      "ML Integration: Integrated ML and deep learning models for monthly and seasonal sales forecasting, inventory demand planning, employee productivity scoring, and per-employee revenue analytics.",
+      "Data Pipelines: Built data processing pipelines using Pandas, NumPy, and SciPy; designed and maintained PostgreSQL schemas to support multi-tenant business data across beta clients.",
+      "Frontend Collaboration: Integrated backend features into the React and TypeScript frontend alongside a team of 20+, including new sales analytics dashboards and real-time messaging sections.",
+    ],
+    technologies: [
+      "Python", "Flask", "FastAPI", "PostgreSQL",
+      "Pandas", "NumPy", "SciPy",
+      "Node.js", "TypeScript", "React", "Git"
+    ],
+    summary:
+      "At Ri Software, I worked across the full stack, backend APIs, ML model integration, data pipelines, and frontend features, helping build a scalable AI platform that brought data science capabilities to small businesses that could not otherwise afford them."
+  },
 
 ]
 };
