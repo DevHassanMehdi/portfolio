@@ -1,6 +1,7 @@
 import React from "react";
 import "./Education.scss";
 import EducationCard from "../../components/educationCard/EducationCard";
+import StackedReveal from "../../components/stackedReveal/StackedReveal";
 import {educationInfo} from "../../portfolio";
 
 export default function Education() {
@@ -10,7 +11,9 @@ export default function Education() {
         <h1 className="education-heading">Education</h1>
         <div className="education-card-container">
           {educationInfo.schools.map((school, index) => (
-            <EducationCard key={index} school={school} />
+            <StackedReveal key={index} isFirst={index === 0}>
+              <EducationCard school={school} />
+            </StackedReveal>
           ))}
         </div>
       </div>

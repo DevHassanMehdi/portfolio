@@ -1,139 +1,94 @@
-import React, { useState, createRef } from "react";
+import React, {createRef} from "react";
+import {Fade, Slide} from "react-reveal";
 import "./ExperienceCard.scss";
-import ColorThief from "colorthief";
 
-export default function ExperienceCard({ cardInfo, isDark }) {
-  const [colorArrays, setColorArrays] = useState([]);
+const GetDescBullets = ({descBullets, isDark}) => {
+  return descBullets
+    ? descBullets.map((item, i) => {
+        const colonIndex = item.indexOf(": ");
+        const hasBoldPrefix = colonIndex !== -1 && colonIndex < 40;
+        return (
+          <li key={i} className={isDark ? "subTitle dark-mode-text" : "subTitle"}>
+            {hasBoldPrefix ? (
+              <>
+                <strong>{item.slice(0, colonIndex + 1)}</strong>
+                {item.slice(colonIndex + 1)}
+              </>
+            ) : (
+              item
+            )}
+          </li>
+        );
+      })
+    : null;
+};
+
+export default function ExperienceCard({cardInfo, isDark}) {
   const imgRef = createRef();
 
-  function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
-  }
-
-  function rgb(values) {
-    return typeof values === "undefined"
-      ? null
-      : "rgb(" + values.join(", ") + ")";
-  }
-
-  const GetDescBullets = ({ descBullets, isDark }) => {
-    return descBullets
-      ? descBullets.map((item, i) => {
-          const colonIndex = item.indexOf(": ");
-          const hasBoldPrefix = colonIndex !== -1 && colonIndex < 40;
-          return (
-            <li
-              key={i}
-              className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-            >
-              {hasBoldPrefix ? (
-                <>
-                  <strong>{item.slice(0, colonIndex + 1)}</strong>
-                  {item.slice(colonIndex + 1)}
-                </>
-              ) : (
-                item
-              )}
-            </li>
-          );
-        })
-      : null;
-  };
-
-  const GetListSection = (title, items) => {
-    return items && items.length > 0 ? (
-      <>
-        <br />
-        <strong>{title}</strong>
-        <ul>
-          {items.map((item, i) => (
-            <li
-              key={i}
-              className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      </>
-    ) : null;
-  };
-
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{ background: rgb(colorArrays) }} className="experience-banner">
-        <div className="experience-blurred_div"></div>
-        <div className="experience-div-company">
-          <h5 className="experience-text-company">{cardInfo.company}</h5>
+    <div>
+      <Fade left duration={1000}>
+        <div className="exp-card">
+          {cardInfo.companylogo && (
+            <div className="exp-card-left">
+              <img
+                crossOrigin="anonymous"
+                ref={imgRef}
+                className="exp-roundedimg"
+                src={cardInfo.companylogo}
+                alt={cardInfo.company}
+              />
+            </div>
+          )}
+          <div className="exp-card-right">
+            <h5 className="exp-text-company">{cardInfo.company}</h5>
+            <div className="exp-text-details">
+              <h5
+                className={
+                  isDark
+                    ? "dark-mode exp-text-role"
+                    : "exp-text-role"
+                }
+              >
+                {cardInfo.role}
+              </h5>
+              <p
+                className={
+                  isDark
+                    ? "dark-mode exp-text-date"
+                    : "exp-text-date"
+                }
+              >
+                {cardInfo.date}
+              </p>
+              <p className="exp-text-desc">{cardInfo.desc}</p>
+              {cardInfo.descBullets && cardInfo.descBullets.length > 0 && (
+                <div className="exp-text-bullets">
+                  <ul>
+                    <GetDescBullets
+                      descBullets={cardInfo.descBullets}
+                      isDark={isDark}
+                    />
+                  </ul>
+                </div>
+              )}
+              {cardInfo.technologies && cardInfo.technologies.length > 0 && (
+                <p className="exp-text-tech">
+                  <strong>Technologies:</strong>{" "}
+                  {cardInfo.technologies.join(", ")}
+                </p>
+              )}
+              {cardInfo.summary && (
+                <p className="exp-text-summary">{cardInfo.summary}</p>
+              )}
+            </div>
+          </div>
         </div>
-
-        <img
-          crossOrigin={"anonymous"}
-          ref={imgRef}
-          className="experience-roundedimg"
-          src={cardInfo.companylogo}
-          alt={cardInfo.company}
-          onLoad={() => getColorArrays()}
-        />
-      </div>
-      <div className="experience-text-details">
-        <h5
-          className={
-            isDark
-              ? "experience-text-role dark-mode-text"
-              : "experience-text-role"
-          }
-        >
-          {cardInfo.role}
-        </h5>
-        <h5
-          className={
-            isDark
-              ? "experience-text-date dark-mode-text"
-              : "experience-text-date"
-          }
-        >
-          {cardInfo.date}
-        </h5>
-        <p
-          className={
-            isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
-          }
-        >
-          {cardInfo.desc}
-        </p>
-
-        {cardInfo.descBullets && cardInfo.descBullets.length > 0 && (
-          <>
-            <br />
-            <strong>My Responsibilities:</strong>
-            <ul>
-              <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-            </ul>
-          </>
-        )}
-
-        {GetListSection("Technologies Used:", cardInfo.technologies)}
-        {GetListSection("Main Features:", cardInfo.mainFeatures)}
-
-        {cardInfo.summary && (
-          <>
-            <br />
-            <p
-              className={
-                isDark
-                  ? "subTitle experience-text-desc dark-mode-text"
-                  : "subTitle experience-text-desc"
-              }
-            >
-              {cardInfo.summary}
-            </p>
-          </>
-        )}
-      </div>
+      </Fade>
+      <Slide left duration={2000}>
+        <div className="exp-card-border"></div>
+      </Slide>
     </div>
   );
 }

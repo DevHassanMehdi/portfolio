@@ -4,6 +4,7 @@ import AchievementCard from "../../components/achievementCard/AchievementCard";
 import {achievementSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
   if (!achievementSection.display) {
@@ -34,21 +35,20 @@ export default function Achievement() {
             </p>
           </div>
           <div className="achievement-cards-div">
-            {achievementSection.achievementsCards.map((card, i) => {
-              return (
-                <AchievementCard
-                  key={i}
-                  isDark={isDark}
-                  cardInfo={{
-                    title: card.title,
-                    description: card.subtitle,
-                    image: card.image,
-                    imageAlt: card.imageAlt,
-                    footer: card.footerLink
-                  }}
-                />
-              );
-            })}
+            {achievementSection.achievementsCards.map((card, i) => (
+              <AchievementCard
+                key={i}
+                isDark={isDark}
+                cardInfo={{
+                  title: card.title,
+                  subtitle: card.subtitle,
+                  description: card.desc,
+                  image: card.image,
+                  imageAlt: card.imageAlt,
+                  footer: card.footerLink
+                }}
+              />
+            ))}
           </div>
         </div>
       </div>

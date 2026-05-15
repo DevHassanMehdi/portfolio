@@ -4,7 +4,6 @@ import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
 import { illustration, greeting } from "../../portfolio";
@@ -27,17 +26,22 @@ export default function Greeting() {
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-                style={{ textAlign: 'justify' }} // Justification applied here
-              >
-                {greeting.subTitle}
-              </p>
-              <SocialMedia />
+              {Array.isArray(greeting.subTitle) ? (
+                <div className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"}>
+                  {greeting.subTitle.map((para, i) => (
+                    <p key={i} className="greeting-para" style={{ textAlign: "justify" }}>
+                      {para}
+                    </p>
+                  ))}
+                </div>
+              ) : (
+                <p
+                  className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"}
+                  style={{ textAlign: "justify" }}
+                >
+                  {greeting.subTitle}
+                </p>
+              )}
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
