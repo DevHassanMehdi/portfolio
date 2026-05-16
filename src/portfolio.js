@@ -258,7 +258,7 @@ const achievementSection = {
           url: "https://ieeexplore.ieee.org/document/10892686"
         }
       ],
-      desc: "I co-authored this paper with researchers from the University of Turku and Fudan University in Shanghai. We proposed a custom neural architecture combining fuzzy logic with dilated convolutions to extract features from MRI scans. The model achieved 98.8 to 99.7% classification accuracy while reducing trainable parameters. Published at IEEE PIC 2024."
+      desc: "I co-authored this paper with researchers from the University of Turku the University of Sydney. We proposed a custom neural architecture combining fuzzy logic with dilated convolutions to extract features from MRI scans. The model achieved 98.8 to 99.7% classification accuracy while reducing trainable parameters. Published at IEEE PIC 2024."
     },
     {
       title: "International Research Funding",
