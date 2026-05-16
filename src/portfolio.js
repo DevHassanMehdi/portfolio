@@ -23,10 +23,9 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: [
-    "I build AI features and deploy them into production. I work with Computer Vision, Machine Learning, and Deep Learning; backed by solid full-stack development in Python, JavaScript, and Node.js.",
-    "I completed my MSc in Artificial Intelligence at the University of Jyväskylä. My thesis was part of the AI4Hope project and was also funded by the Shanghai Sci-tech Co-research Program.",
-    "Last summer, I was at Rightware Oy in Helsinki. There, I shipped AI features into Kanzi. I improved their object detection pipeline, built an LLM interface that lets designers make project changes in plain English, and shipped several other production AI features.",
-    "I also co-authored an IEEE paper on brain tumor detection. And I am a proud Gold Medalist."
+    "I build and deploy AI features for production environments.",
+    "I work best when I have a clear direction and the freedom to find my own solutions. I draw inspiration from places like philosophy, nature, and patterns in everyday life and I bring that into how I solve problems. My manager at Rightware called me a mad genius, and I think that captures my personality well.",
+    "I was awarded a Gold Medal in my Bachelor's, which shows how seriously I take my work and the standard I hold myself to. If you are looking for someone who thinks differently and builds things that actually ship, I might be your person."
   ],
   resumeLink:
     "https://drive.google.com/file/d/1cEe_pp0G07tnOVEU622JAqqqSYrPkL-t/view?usp=sharing",
@@ -381,7 +380,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Get in Touch 📬"),
   subtitle:
-    "I am currently open to AI Engineer, ML Engineer, Computer Vision, and Backend AI roles in Finland. If you have an opportunity or just want to talk, my inbox is open.",
+    "I am currently looking for AI and ML engineering roles in Finland. If you have an opportunity or just want to connect, my inbox is open.",
   email_address: "itshmehdi@gmail.com"
 };
 
