@@ -28,7 +28,7 @@ const greeting = {
     "I was awarded a Gold Medal in my Bachelor's, which shows how seriously I take my work and the standard I hold myself to. If you are looking for someone who thinks differently and builds things that actually ship, I might be your person."
   ],
   resumeLink:
-    "https://drive.google.com/file/d/1cEe_pp0G07tnOVEU622JAqqqSYrPkL-t/view?usp=sharing",
+    "https://drive.google.com/file/d/1-fUHrLwS6nTkc7pSEJtakGtNiHziDfeN/view?usp=sharing",
   displayGreeting: true
 };
 
@@ -276,7 +276,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certificate",
-          url: "https://drive.google.com/file/d/1pdotUcegOjTFgrutM_838y84hTkvPJsD/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1ZfY1qLExQw9dSYjVwY3KRw9PKCKwYyN-/view?usp=sharing"
         }
       ],
       desc: "I received a scholarship from the University of Jyväskylä for strong academic performance and demonstrated potential in the MSc Artificial Intelligence program. Competitive award granted to a small number of incoming students each year."
@@ -289,7 +289,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certificate",
-          url: "https://drive.google.com/file/d/1IZjJ9BccqxCm_dp_mNp8mLxok8LDVL3W/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1XFVrFFSS-6blyILIBnymOHd0VFm1crjv/view?usp=sharing"
         }
       ],
       desc: "I was awarded a Gold Medal for securing the highest CGPA of 3.78/4.0 across my entire Computer Science graduating cohort. Four years of consistent academic performance across every subject in the program."
@@ -302,7 +302,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certificate",
-          url: "https://drive.google.com/file/d/1gH1zb16ms7QoS4glPHcJ24xLV8L5Rhy0/view?usp=sharing"
+          url: "https://drive.google.com/file/d/10p_s1MwviKY-Kq56oiLldFVFOyCrSkrp/view?usp=sharing"
         }
       ],
       desc: "I am also certified in Azure cloud services covering app development, deployment workflows, and CI/CD pipelines. Relevant to ML model deployment and cloud-based backend development, which I have applied in production projects."
@@ -315,7 +315,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certificate",
-          url: "https://drive.google.com/file/d/1yuB4AV57TvEVZmWnvMf4oCDZ-vxqWIPK/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1-iDC8Yv75cECDf12T8q47CSuSwBq9arr/view?usp=sharing"
         }
       ],
       desc: "I was selected to serve as a degree tutor for incoming international students at JYU, to support their academic and social integration. This experience gave me training on group leadership and intercultural communication."
