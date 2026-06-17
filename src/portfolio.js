@@ -24,7 +24,7 @@ const greeting = {
   title: "Hi, I'm Hassan",
   subTitle: [
     "I train AI models, and implement AI features into production environments. These days I code with AI tools like Claude Code.",
-    "Right now, I am fine-tuning a deep learning foundation model for the AI4Hope project on the CSC Puhti supercomputer. Before that I was at Rightware in Helsinki, shipping computer vision and LLM features into Kanzi.",
+    "Right now, I am fine-tuning a deep learning foundation model for the AI4HOPE project on the CSC Puhti supercomputer. Before that I was at Rightware in Helsinki, shipping computer vision and LLM features into Kanzi.",
     "When I step away from the screen I am usually on a mountain bike, in a pool, or emersed in a single player video game. Sometimes all three in the same day."
   ],
   resumeLink:
@@ -117,7 +117,7 @@ const workExperiences = {
       company: "University of Turku",
       companylogo: require("./assets/images/utuLogo.jpg"),
       date: "June 2026 – August 2026",
-      desc: "I am continuing my MSc thesis research as part of the AI4Hope project at the University of Turku. My work focuses on fine-tuning SleepFM, a deep learning foundation model, on MESA polysomnography data for automated sleep staging. I run training jobs on the CSC Puhti supercomputer, managing SLURM compute nodes via SSH and evaluating how the model adapts to clinical sleep data."
+      desc: "I am continuing my MSc thesis research as part of the AI4HOPE project at the University of Turku. My work focuses on fine-tuning SleepFM, a deep learning foundation model, on MESA polysomnography data for automated sleep staging. I run training jobs on the CSC Puhti supercomputer, managing SLURM compute nodes via SSH and evaluating how the model adapts to clinical sleep data."
     },
     {
       role: "AI Engineer Trainee – Helsinki, Finland",
@@ -146,7 +146,7 @@ const educationInfo = {
       logo: require("./assets/images/jyuLogo.png"),
       subHeader: "Master of Science in Artificial Intelligence",
       duration: "September 2024 – June 2026",
-      desc: "I completed my MSc in Artificial Intelligence on a merit-based JYU scholarship and graduated in June 2026. My thesis evaluated ML model performance across clinical PSG and wearable sleep data using TSFEL feature extraction and SHAP analysis. The research was part of the AI4Hope project in collaboration with the University of Turku, and received funding from the Shanghai Sci-tech Co-research Program."
+      desc: "I completed my MSc in Artificial Intelligence on a merit-based JYU scholarship and graduated in June 2026. My thesis evaluated ML model performance across clinical PSG and wearable sleep data using TSFEL feature extraction and SHAP analysis. The research was part of the AI4HOPE project in collaboration with the University of Turku, and received funding from the Shanghai Sci-tech Co-research Program."
     },
     {
       schoolName: "IQRA National University",
@@ -173,22 +173,16 @@ const bigProjects = {
   subtitle: "Things I built that I am proud of.",
   projects: [
     {
-      projectName: "MSc Thesis, Sleep Staging Research (AI4Hope Project)",
+      projectName: "Sleep Staging Research (AI4HOPE Project)",
       projectDesc:
-        "My MSc thesis was part of the AI4Hope project, running in collaboration with the University of Turku and funded by the Shanghai Sci-tech Co-research Program. The goal was to evaluate how well ML models perform when trained on clinical sleep data and tested on wearable device data, and whether feature reduction and harmonization could bridge that gap.",
-      projectHighlights: [
-        "Built a four-class sleep staging pipeline (AWAKE, LIGHT, DEEP, REM) using MESA and TIHM datasets.",
-        "Used TSFEL for time-series feature extraction across multiple physiological signal channels.",
-        "Applied SHAP interpretability analysis to identify which features actually drove model decisions across datasets.",
-        "Evaluated model generalization across clinical PSG and wearable IoT data, two very different data environments."
-      ],
+        "My MSc thesis was part of the AI4HOPE project, in collaboration with the University of Turku and was funded by the Shanghai Sci-tech Co-research Program. I built a four-class sleep staging pipeline using MESA and TIHM datasets, applied TSFEL for time-series feature extraction, and used SHAP analysis to understand which features drove model decisions across clinical and wearable data environments. The work continues. I am now a Project Researcher at UTU, fine-tuning a deep learning foundation model on the same data.",
       techStack: ["Python", "TSFEL", "scikit-learn", "SHAP", "Pandas", "NumPy", "Matplotlib"],
       footerLink: []
     },
     {
-      projectName: "ImageUpLift, AI Image Enhancer and Converter",
+      projectName: "ImageUpLift — AI Image Enhancer and Converter",
       projectDesc:
-        "A personal project I built to solve a real problem, turning low-quality sketches and images into clean, high-resolution or vector outputs. Users can upload an image, pick a mode (enhance, vectorize, or outline), preview the result, and track their conversion history.",
+        "An AI web app that takes a low quality sketch or image and turns it into a clean, enhanced, or vectorized version. Built for designers who need to go from a rough scan to a production ready file fast. FastAPI backend with ESRGAN and OpenCV pipelines, React frontend.",
       techStack: ["FastAPI", "ESRGAN", "OpenCV", "CLIP", "React", "Docker"],
       footerLink: [
         {
@@ -200,7 +194,7 @@ const bigProjects = {
     {
       projectName: "Driving Negligence Dissuader System (DNDS)",
       projectDesc:
-        "My Bachelor's thesis project, which received a 4/4 grade. A real-time computer vision system that monitors driver drowsiness through facial landmark tracking, detects lane deviation, and identifies nearby vehicles, animals, and pedestrians using YOLO. When risk is detected, the system alerts the driver immediately.",
+        "A real-time computer vision system that monitors drivers for drowsiness and unsafe behavior. It tracks eye closure through facial landmarks, detects lane deviation, and identifies nearby vehicles, animals, and pedestrians using YOLO. When risk is detected, the system alerts the driver immediately. Runs continuously on a live camera feed.",
       techStack: ["Python", "YOLO", "OpenCV", "TensorFlow", "DLib", "Haar Cascades", "Raspberry Pi"],
       footerLink: [
         {
@@ -240,7 +234,7 @@ const achievementSection = {
       image: require("./assets/images/jyuLogo.png"),
       imageAlt: "JYU Logo",
       footerLink: [],
-      desc: "My MSc thesis received external funding from the Shanghai Sci-tech Co-research Program as part of the AI4Hope project. The funding supported my research on ML model evaluation across clinical and wearable sleep data, in collaboration with the University of Turku."
+      desc: "My MSc thesis received external funding from the Shanghai Sci-tech Co-research Program as part of the AI4HOPE project. The funding supported my research on ML model evaluation across clinical and wearable sleep data, in collaboration with the University of Turku."
     },
     {
       title: "JYU Scholarship Award",
