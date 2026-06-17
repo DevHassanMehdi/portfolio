@@ -59,10 +59,10 @@ export default function Skills() {
                 );
               })}
             </div>
-            <SoftwareSkill />
           </div>
         </Fade>
       </div>
+      <SoftwareSkill />
     </div>
   );
 }
