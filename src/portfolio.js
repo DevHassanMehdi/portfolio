@@ -294,11 +294,9 @@ const achievementSection = {
 
 const contactInfo = {
   title: emoji("Get in Touch 📬"),
-  subtitle:
-    "I am currently looking for AI and ML engineering roles in Finland. If you have an opportunity or just want to connect, my inbox is open.",
+  subtitle: "Looking for AI and ML roles in Finland. My inbox is open.",
   email_address: "itshmehdi@gmail.com"
 };
-
 // Social Media Links
 
 const socialMediaLinks = {
