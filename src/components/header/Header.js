@@ -8,28 +8,17 @@ import {
   workExperiences,
   skillsSection,
   educationInfo,
-  openSource,
-  blogSection,
-  talkSection,
   achievementSection,
-  bigProjects,
-  twitterDetails,
-  podcastSection
+  bigProjects
 } from "../../portfolio";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
-  // const viewGreeting = greeting.displayGreeting;
   const viewExperience = workExperiences.display;
-  // const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewEducation = educationInfo.display;
   const viewAchievement = achievementSection.display;
   const viewProjects = bigProjects.display;
-  const viewBlog = blogSection.display;
-  const viewTalks = talkSection.display;
-  const viewTwitter = twitterDetails.display;
-  const viewPodcast = podcastSection.display;
 
   return (
     <Headroom>
@@ -71,26 +60,6 @@ function Header() {
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
-            </li>
-          )}
-          {viewBlog && (
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">Talks</a>
-            </li>
-          )}
-          {viewTwitter && (
-            <li>
-              <a href="#twitter">Twitter</a>
-            </li>
-          )}
-          {viewPodcast && (
-            <li>
-              <a href="#podcast">Podcast</a>
             </li>
           )}
           <li>
