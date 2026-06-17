@@ -23,9 +23,9 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: [
-    "I build and deploy AI features for production environments.",
-    "I work best when I have a clear direction and the freedom to find my own solutions. I draw inspiration from places like philosophy, nature, and patterns in everyday life and I bring that into how I solve problems. My manager at Rightware called me a mad genius, and I think that captures my personality well.",
-    "I was awarded a Gold Medal in my Bachelor's, which shows how seriously I take my work and the standard I hold myself to. If you are looking for someone who thinks differently and builds things that actually ship, I might be your person."
+    "I train AI models, and implement AI features into production environments. These days I code with AI tools like Claude Code.",
+    "Right now, I am fine-tuning a deep learning foundation model for the AI4Hope project on the CSC Puhti supercomputer. Before that I was at Rightware in Helsinki, shipping computer vision and LLM features into Kanzi.",
+    "When I step away from the screen I am usually on a mountain bike, in a pool, or emersed in a single player video game. Sometimes all three in the same day."
   ],
   resumeLink:
     "https://drive.google.com/file/d/1-fUHrLwS6nTkc7pSEJtakGtNiHziDfeN/view?usp=sharing",
@@ -40,20 +40,12 @@ const greeting = {
 const skillsSection = {
   title: "What I Build",
   subTitle:
-    "My core stack spans ML model development and deployment, computer vision pipelines, and backend engineering. I work across the full lifecycle from raw data to production.",
+    "I train models and ship AI features into softwares. My work covers machine learning, computer vision, LLM integration, and full-stack Python development.",
   skills: [
-    emoji(
-      "I train and deploy computer vision models for real production environments. Object detection, image classification, OCR pipelines. I have shipped all of these into live products."
-    ),
-    emoji(
-      "I build backend APIs and services in Python using FastAPI and Flask. Clean, documented, production-ready."
-    ),
-    emoji(
-      "I design data pipelines and manage SQL databases to support ML workflows, multi-tenant platforms, and analytics."
-    ),
-    emoji(
-      "When the project needs it, I contribute across the full stack using React, TypeScript, and Node.js."
-    )
+    emoji("Computer vision and object detection. I have shipped these into live automotive software."),
+    emoji("LLM integration and foundation model fine-tuning. I have built LLM features that ran in production."),
+    emoji("Backend APIs and data pipelines in Python, FastAPI, Flask, and PostgreSQL."),
+    emoji("I work Full-stack when the project needs it. React, TypeScript, and Node.js.")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -69,6 +61,10 @@ const skillsSection = {
     { skillName: "scikit-learn", fontAwesomeClassname: "fas fa-robot" },
     { skillName: "HuggingFace", fontAwesomeClassname: "fas fa-smile" },
     { skillName: "Ollama", fontAwesomeClassname: "fas fa-server" },
+    { skillName: "Fine-Tuning", fontAwesomeClassname: "fas fa-sliders-h" },
+    { skillName: "SHAP", fontAwesomeClassname: "fas fa-chart-bar" },
+    { skillName: "SLURM", fontAwesomeClassname: "fas fa-server" },
+    { skillName: "HPC", fontAwesomeClassname: "fas fa-microchip" },
 
     // Backend
     { skillName: "FastAPI", fontAwesomeClassname: "fas fa-bolt" },
@@ -95,60 +91,52 @@ const techStack = {
   viewSkillBars: true,
   experience: [
     {
-      Stack: "AI, Machine Learning & Deep Learning (PyTorch, TensorFlow, scikit-learn)",
-      progressPercentage: "82%"
-    },
-    {
-      Stack: "Computer Vision (YOLO, OpenCV, OCR)",
+      Stack: "Computer Vision & Deep Learning",
       progressPercentage: "88%"
     },
     {
-      Stack: "Backend Development (Python, FastAPI, Flask)",
-      progressPercentage: "78%"
+      Stack: "Machine Learning & MLOps",
+      progressPercentage: "83%"
     },
     {
-      Stack: "Full-Stack Development (Node.js, TypeScript, React)",
+      Stack: "LLM Integration & Fine-Tuning",
       progressPercentage: "60%"
+    },
+    {
+      Stack: "Backend & Full-Stack Development",
+      progressPercentage: "78%"
     }
   ],
   displayCodersrank: false
 };
-
 // Work experience section
 
 const workExperiences = {
   display: true,
   experience: [
     {
+      role: "Project Researcher – Turku, Finland",
+      company: "University of Turku",
+      companylogo: require("./assets/images/utuLogo.jpg"),
+      date: "June 2026 – August 2026",
+      desc: "I am continuing my MSc thesis research as part of the AI4Hope project at the University of Turku. My work focuses on fine-tuning SleepFM, a deep learning foundation model, on MESA polysomnography data for automated sleep staging. I run training jobs on the CSC Puhti supercomputer, managing SLURM compute nodes via SSH and evaluating how the model adapts to clinical sleep data."
+    },
+    {
       role: "AI Engineer Trainee – Helsinki, Finland",
       company: "Rightware Oy",
       companylogo: require("./assets/images/rightwareLogo.png"),
       date: "April 2025 – August 2025",
-      desc: "Rightware builds Kanzi, one of the world's leading automotive HMI platforms, used by major car manufacturers globally. I spent the summer shipping production AI features directly into that product.",
-      descBullets: [
-        "Object Detection: Improved object detection accuracy from 64% to 83% by migrating from YOLOv7-small to YOLOX-medium with custom dataset augmentation, while keeping real-time inference at ~30fps. The migration also resolved a licensing conflict, making the feature commercially viable for Rightware's clients.",
-        "LLM Interface: Built a locally hosted LLM feature via Ollama that let designers make project changes in plain English, removing the need to manually navigate Kanzi's UI for common tasks.",
-        "Font Recognition: Built a font classification pipeline trained on 30,000 synthetic images from Google's top 500 font library. Used a modified ResNet50 to achieve 68% accuracy on real-world gauge cluster images, the first automated font recognition feature at Rightware. Combined with EasyOCR for full text extraction.",
-        "Layout Adaptation: Designed a resolution adaptation tool using KiwiSolver that recursively parsed and adjusted all UI elements in Kanzi project files, reducing a full day of manual redesign work to approximately 3 seconds.",
-        "Collaboration: Worked with 2 senior engineers to deliver these core commercial features I developed. Presented production-ready features to client stakeholders alongside the CEO."
-      ]
+      desc: "Kanzi is an automotive HMI platform used in production vehicles by major car manufacturers globally. I spent the summer shipping AI features directly into that product. I improved object detection accuracy from 64% to 83%, built an LLM interface using Ollama that let designers make project changes in plain English, created a font recognition pipeline trained on 30,000 synthetic images, and designed a layout adaptation tool that reduced hours of manual work to seconds."
     },
     {
       role: "Backend & AI Engineer – Remote, Ukraine",
       company: "Ri Software (Startup)",
       companylogo: require("./assets/images/riLogo.jpeg"),
       date: "April 2023 – February 2024",
-      desc: "Ri-Software was an early-stage startup building an AI-driven business management platform for small businesses, covering sales forecasting, inventory management, HR automation, and ROI tracking.",
-      descBullets: [
-        "Platform Development: Built backend architecture and REST APIs in Python and Flask, serving 50 beta clients across sales, inventory, HR automation, and ROI tracking.",
-        "ML Integration: Trained and integrated ML models for monthly and seasonal sales forecasting, inventory demand planning, and employee productivity scoring.",
-        "Data Pipelines: Built data processing pipelines using Pandas, NumPy, and SciPy. Designed and maintained PostgreSQL schemas to support multi-tenant business data across beta clients.",
-        "Frontend Collaboration: Integrated backend features into the React and TypeScript frontend, including new sales analytics dashboards and real-time messaging sections."
-      ]
+      desc: "Ri-Software was a startup building an AI-driven business management platform for small businesses. I built the backend architecture and REST APIs in Python and Flask, trained ML models for sales forecasting and inventory planning, and built data pipelines using Pandas and PostgreSQL. I also contributed to the React and TypeScript frontend alongside a team of 20 engineers."
     }
   ]
 };
-
 
 // Education Section
 
@@ -159,29 +147,18 @@ const educationInfo = {
       schoolName: "University of Jyväskylä",
       logo: require("./assets/images/jyuLogo.png"),
       subHeader: "Master of Science in Artificial Intelligence",
-      duration: "September 2024 – July 2026",
-      desc: "Completed my MSc in Artificial Intelligence on a merit-based JYU scholarship. My thesis was part of the AI4Hope project in collaboration with the University of Turku, and received funding from the Shanghai Sci-tech Co-research Program.",
-      descBullets: [
-        "Thesis: Evaluated ML model performance across clinical PSG and wearable sleep data using TSFEL feature extraction and SHAP interpretability analysis.",
-        "Studied advanced Machine Learning, Deep Learning, Computer Vision, and NLP.",
-        "Collaborated with researchers at the University of Turku on a funded international research project."
-      ]
+      duration: "September 2024 – June 2026",
+      desc: "I completed my MSc in Artificial Intelligence on a merit-based JYU scholarship and graduated in June 2026. My thesis evaluated ML model performance across clinical PSG and wearable sleep data using TSFEL feature extraction and SHAP analysis. The research was part of the AI4Hope project in collaboration with the University of Turku, and received funding from the Shanghai Sci-tech Co-research Program."
     },
     {
       schoolName: "IQRA National University",
       logo: require("./assets/images/inuLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "February 2019 – February 2023",
-      desc: "Graduated as the top student in my batch with a CGPA of 3.78/4.0 and was awarded a Gold Medal for it.",
-      descBullets: [
-        "Studied core CS fundamentals including algorithms, data structures, AI, data mining, and software engineering.",
-        "Built a real-time driver drowsiness and lane deviation detection system as my thesis, using YOLO and OpenCV.",
-        "Developed a strong foundation in image processing, system design, and human-computer interaction."
-      ]
+      desc: "I graduated top of my cohort with a CGPA of 3.78 out of 4.0 and was awarded a Gold Medal for the highest academic performance across the entire graduating batch. My thesis was a real-time driver drowsiness and lane deviation detection system built with YOLO and OpenCV."
     }
   ]
 };
-
 
 
 /* Your Open Source Section to View Your Github Pinned Projects
