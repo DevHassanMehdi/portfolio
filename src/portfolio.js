@@ -24,7 +24,7 @@ const greeting = {
   title: "Hi, I'm Hassan",
   subTitle: [
     "I train AI models, and implement AI features into production environments. These days I code with AI tools like Claude Code.",
-    "Right now, I am fine-tuning a deep learning foundation model for the AI4HOPE project on the CSC Puhti supercomputer. Before that I was at Rightware in Helsinki, shipping computer vision and LLM features into Kanzi.",
+    "Right now, I am fine-tuning a deep learning foundation & Large Language models for the AI4HOPE project on the CSC Puhti & Roihu supercomputers. Before that I was at Rightware in Helsinki, shipping computer vision and LLM features into Kanzi.",
     "When I step away from the screen I am usually on a mountain bike, in a pool, or emersed in a single player video game. Sometimes all three in the same day."
   ],
   resumeLink:
@@ -117,14 +117,14 @@ const workExperiences = {
       company: "University of Turku",
       companylogo: require("./assets/images/utuLogo.jpg"),
       date: "June 2026 – August 2026",
-      desc: "I am continuing my MSc thesis research as part of the AI4HOPE project at the University of Turku. My work focuses on fine-tuning SleepFM, a deep learning foundation model, on MESA polysomnography data for automated sleep staging. I run training jobs on the CSC Puhti supercomputer, managing SLURM compute nodes via SSH and evaluating how the model adapts to clinical sleep data."
+      desc: "I am continuing my thesis research as a Project Researcher at the University of Turku. I benchmark and implement deep learning foundation models for sleep staging on MESA polysomnography data, running jobs on the CSC Puhti & Roihu supercomputers via SLURM. Right now I am implementing Hypnos, an Oxford paper that applies next-token prediction to physiological signals the same way LLMs process language. It is hands-on work at the boundary of LLM architecture and clinical data."
     },
     {
       role: "AI Engineer Trainee – Helsinki, Finland",
       company: "Rightware Oy",
       companylogo: require("./assets/images/rightwareLogo.png"),
       date: "April 2025 – August 2025",
-      desc: "Kanzi is an automotive HMI platform used in production vehicles by major car manufacturers globally. I spent the summer shipping AI features directly into that product. I improved object detection accuracy from 64% to 83%, built an LLM interface using Ollama that let designers make project changes in plain English, created a font recognition pipeline trained on 30,000 synthetic images, and designed a layout adaptation tool that reduced hours of manual work to seconds."
+      desc: "Kanzi is an automotive HMI platform used in production vehicles by major car manufacturers globally. I spent the summer shipping AI features directly into that product. I improved object detection accuracy from 64% to 83%, built an LLM interface using Ollama that let designers make project changes in plain English, handling the prompt design and orchestration myself, created a font recognition pipeline trained on 30,000 synthetic images, and designed a layout adaptation tool that reduced hours of manual work to seconds."
     },
     {
       role: "Backend & AI Engineer – Remote, Ukraine",
@@ -226,28 +226,7 @@ const achievementSection = {
           url: "https://ieeexplore.ieee.org/document/10892686"
         }
       ],
-      desc: "I co-authored this paper with researchers from the University of Turku the University of Sydney. We proposed a custom neural architecture combining fuzzy logic with dilated convolutions to extract features from MRI scans. The model achieved 98.8 to 99.7% classification accuracy while reducing trainable parameters. Published at IEEE PIC 2024."
-    },
-    {
-      title: "International Research Funding",
-      subtitle: "Shanghai Sci-tech Co-research Program, Project No. 25HB2703300",
-      image: require("./assets/images/jyuLogo.png"),
-      imageAlt: "JYU Logo",
-      footerLink: [],
-      desc: "My MSc thesis received external funding from the Shanghai Sci-tech Co-research Program as part of the AI4HOPE project. The funding supported my research on ML model evaluation across clinical and wearable sleep data, in collaboration with the University of Turku."
-    },
-    {
-      title: "JYU Scholarship Award",
-      subtitle: "Merit-based Scholarship, University of Jyväskylä, Finland",
-      image: require("./assets/images/jyuLogo.png"),
-      imageAlt: "JYU Scholarship Logo",
-      footerLink: [
-        {
-          name: "Certificate",
-          url: "https://drive.google.com/file/d/1ZfY1qLExQw9dSYjVwY3KRw9PKCKwYyN-/view?usp=sharing"
-        }
-      ],
-      desc: "I received a scholarship from the University of Jyväskylä for strong academic performance and demonstrated potential in the MSc Artificial Intelligence program. Competitive award granted to a small number of incoming students each year."
+      desc: "My most notable research contribution is this IEEE paper, co-authored with researchers from the University of Turku and the University of Sydney. We built a custom neural architecture combining fuzzy logic with dilated convolutions for MRI-based brain tumor detection, hitting 98.8 to 99.7% classification accuracy."
     },
     {
       title: "Gold Medal, Top Graduate",
@@ -260,33 +239,44 @@ const achievementSection = {
           url: "https://drive.google.com/file/d/1XFVrFFSS-6blyILIBnymOHd0VFm1crjv/view?usp=sharing"
         }
       ],
-      desc: "I was awarded a Gold Medal for securing the highest CGPA of 3.78/4.0 across my entire Computer Science graduating cohort. Four years of consistent academic performance across every subject in the program."
+      desc: "My most notable academic achievement is my Gold Medal from Iqra National University. I graduated with the highest CGPA of 3.78/4.0 across my entire Computer Science cohort. Four years, every subject, top of the batch."
     },
     {
-      title: "Microsoft Azure Developer Associate",
-      subtitle: "Cloud Certification, Microsoft",
-      image: require("./assets/images/azureLogo.png"),
-      imageAlt: "Azure Certification Logo",
+      title: "International Research Funding",
+      subtitle: "Shanghai Sci-tech Co-research Program, Project No. 25HB2703300",
+      image: require("./assets/images/jyuLogo.png"),
+      imageAlt: "JYU Logo",
+      footerLink: [],
+      desc: "My MSc thesis received external funding from the Shanghai Sci-tech Co-research Program. That kind of funding does not go to every student. It went to this project because the research was worth backing."
+    },
+    {
+      title: "JYU Scholarship Award",
+      subtitle: "Merit-based Scholarship, University of Jyväskylä, Finland",
+      image: require("./assets/images/jyuLogo.png"),
+      imageAlt: "JYU Scholarship Logo",
       footerLink: [
         {
           name: "Certificate",
-          url: "https://drive.google.com/file/d/10p_s1MwviKY-Kq56oiLldFVFOyCrSkrp/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1ZfY1qLExQw9dSYjVwY3KRw9PKCKwYyN-/view?usp=sharing"
         }
       ],
-      desc: "I am also certified in Azure cloud services covering app development, deployment workflows, and CI/CD pipelines. Relevant to ML model deployment and cloud-based backend development, which I have applied in production projects."
+      desc: "I was awarded a merit-based scholarship by the University of Jyväskylä to study MSc Artificial Intelligence. It was competitive and granted to a small number of incoming students each year."
     },
     {
-      title: "Degree Tutor, University of Jyväskylä",
-      subtitle: "Mentor for International Students",
+      title: "Certificate of Honor, University of Jyväskylä",
+      subtitle: "Stipend for completing MSc studies within the target time frame, 2026",
+      image: require("./assets/images/jyuLogo.png"),
+      imageAlt: "JYU Logo",
+      footerLink: [],
+      desc: "I was awarded a stipend by the University of Jyväskylä for completing my MSc within the target time frame."
+    },
+    {
+      title: "Talent Sprint Challenge, JAMK",
+      subtitle: "Entrepreneurship Program, April to May 2026",
       image: require("./assets/images/jyyLogo.png"),
-      imageAlt: "University of Jyväskylä Logo",
-      footerLink: [
-        {
-          name: "Certificate",
-          url: "https://drive.google.com/file/d/1-iDC8Yv75cECDf12T8q47CSuSwBq9arr/view?usp=sharing"
-        }
-      ],
-      desc: "I was selected to serve as a degree tutor for incoming international students at JYU, to support their academic and social integration. This experience gave me training on group leadership and intercultural communication."
+      imageAlt: "JAMK Logo",
+      footerLink: [],
+      desc: "Most recently I completed the Talent Sprint Challenge run by JAMK Talent Boost in Jyväskylä. I worked with CEOs of local tech startups on their core business problems, applying analytical and strategic thinking to real company challenges."
     }
   ],
   display: true
