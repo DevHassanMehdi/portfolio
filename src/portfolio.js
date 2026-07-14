@@ -242,12 +242,26 @@ const achievementSection = {
       desc: "My most notable academic achievement is my Gold Medal from Iqra National University. I graduated with the highest CGPA of 3.78/4.0 across my entire Computer Science cohort. Four years, every subject, top of the batch."
     },
     {
+      title: "Talent Sprint Challenge, JAMK",
+      subtitle: "Entrepreneurship Program, April to May 2026",
+      image: require("./assets/images/jamkLogo.jpg"),
+      imageAlt: "JAMK Logo",
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://drive.google.com/file/d/11K0ukgqvEvZ8eIqYgCG9KZNKpTmQziXP/view?usp=drive_link"
+        }
+      ],
+      desc: "Most recently I completed the Talent Sprint Challenge run by JAMK Talent Boost in Jyväskylä. I worked with CEOs of local tech startups on their core business problems, applying analytical and strategic thinking to real company challenges."
+    },
+    {
       title: "International Research Funding",
       subtitle: "Shanghai Sci-tech Co-research Program, Project No. 25HB2703300",
       image: require("./assets/images/jyuLogo.png"),
       imageAlt: "JYU Logo",
       footerLink: [],
       desc: "My MSc thesis received external funding from the Shanghai Sci-tech Co-research Program. That kind of funding does not go to every student. It went to this project because the research was worth backing."
+
     },
     {
       title: "JYU Scholarship Award",
@@ -267,17 +281,14 @@ const achievementSection = {
       subtitle: "Stipend for completing MSc studies within the target time frame, 2026",
       image: require("./assets/images/jyuLogo.png"),
       imageAlt: "JYU Logo",
-      footerLink: [],
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://drive.google.com/file/d/1qa39S12ZhhZ3WOnEJyA06D773ipPuhHU/view?usp=drive_link"
+        }
+      ],
       desc: "I was awarded a stipend by the University of Jyväskylä for completing my MSc within the target time frame."
     },
-    {
-      title: "Talent Sprint Challenge, JAMK",
-      subtitle: "Entrepreneurship Program, April to May 2026",
-      image: require("./assets/images/jyyLogo.png"),
-      imageAlt: "JAMK Logo",
-      footerLink: [],
-      desc: "Most recently I completed the Talent Sprint Challenge run by JAMK Talent Boost in Jyväskylä. I worked with CEOs of local tech startups on their core business problems, applying analytical and strategic thinking to real company challenges."
-    }
   ],
   display: true
 };
