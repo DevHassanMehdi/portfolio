@@ -17,7 +17,7 @@
   color: $subTitle;
 }
 
-// ─── Two-column layout: deck (60 %) | index (40 %) ────────────────────────────
+// ─── Two-column layout ────────────────────────────────────────────────────────
 .ach-layout {
   display: flex;
   gap: 2.5rem;
@@ -27,9 +27,8 @@
 .ach-deck-wrapper {
   flex: 0 0 60%;
   max-width: 60%;
-  // extra space so peeking cards don't overflow the wrapper visually
-  padding-right: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
   box-sizing: border-box;
 }
 
@@ -38,61 +37,128 @@
   display: grid;
 }
 
+// ─── Slot base ────────────────────────────────────────────────────────────────
 .ach-deck-slot {
   grid-column: 1;
   grid-row: 1;
-  align-self: start; // each slot is its own natural height
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  align-self: start;
 }
 
-// Exit keyframe: top card arcs away and fades out
-@keyframes ach-exit {
-  0%   { transform: translate(0, 0)     scale(1);    opacity: 1;   }
-  55%  { transform: translate(55px, -20px) scale(0.95); opacity: 0.4; }
-  100% { transform: translate(0, 28px)  scale(0.9); opacity: 0;   }
+// ─── Slot positions via [data-pos] attribute selectors ───────────────────────
+// All transform / opacity / z-index lives here — never inline styles.
+// The same 0.4s ease used everywhere else in the site.
+
+[data-pos="0"] {
+  transform: translate(0, 0) scale(1);
+  opacity: 1;
+  z-index: 5;
+  cursor: pointer;
+  transition: transform var(--deck-fade-ms) ease, opacity var(--deck-fade-ms) ease;
 }
 
-.ach-deck-slot--exiting {
-  animation: ach-exit 0.3s ease forwards;
-  z-index: 10 !important;
-  pointer-events: none !important;
+[data-pos="1"] {
+  transform: translate(8px, 8px) scale(0.97);
+  opacity: 0.9;
+  z-index: 4;
+  transition: transform var(--deck-fade-ms) ease, opacity var(--deck-fade-ms) ease;
 }
 
+[data-pos="2"] {
+  transform: translate(16px, 16px) scale(0.94);
+  opacity: 0.75;
+  z-index: 3;
+  transition: transform var(--deck-fade-ms) ease, opacity var(--deck-fade-ms) ease;
+}
+
+[data-pos="hidden"] {
+  transform: translate(16px, 16px) scale(0.94);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+  transition: transform var(--deck-fade-ms) ease, opacity var(--deck-fade-ms) ease;
+}
+
+// "enter" is the teleport-in position for PREV: same coords as pos=0
+// but with no transition so the card arrives silently (it's opacity=0 anyway).
+[data-pos="enter"] {
+  transform: translate(0, 0) scale(1);
+  opacity: 0;
+  z-index: 6;
+  transition: none;
+}
+
+// ─── Crossfade animations ─────────────────────────────────────────────────────
+
+@keyframes ach-fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes ach-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+// NEXT: old front fades out, stays on top the whole time
+.ach-slot--fade-out {
+  animation: ach-fade-out var(--deck-fade-ms) ease forwards;
+  z-index: 6;
+  transition: none;
+  pointer-events: none;
+}
+
+// PREV: new front fades in on top of everything
+.ach-slot--fade-in {
+  animation: ach-fade-in var(--deck-fade-ms) ease forwards;
+  z-index: 6;
+  transition: none;
+}
+
+// Disable front-card click cursor while an animation is running
+.ach-deck--animating [data-pos="0"] {
+  cursor: default;
+}
+
+// ─── Reduced motion ───────────────────────────────────────────────────────────
 @media (prefers-reduced-motion: reduce) {
-  .ach-deck-slot {
+  [data-pos="0"],
+  [data-pos="1"],
+  [data-pos="2"],
+  [data-pos="hidden"] {
     transition: none;
   }
-  .ach-deck-slot--exiting {
+  .ach-slot--fade-out,
+  .ach-slot--fade-in {
     animation: none;
-    opacity: 0 !important;
   }
 }
 
-// ─── Card (same visual language as existing site) ─────────────────────────────
+// ─── Card ─────────────────────────────────────────────────────────────────────
 .ach-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 340px;
   background-color: $lightBackground2;
+  // Static shadow — never transitions, no paint during crossfade
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 12px;
   border: 1px solid $lightBorder1;
   padding: 1.5rem 1.25rem 1.25rem;
   box-sizing: border-box;
   user-select: none;
-  transition: box-shadow 0.3s ease;
 }
 
 .dark-mode.ach-card {
   background-color: $darkBackground;
 }
 
-.ach-card:hover {
+// Hover shadow only on the visible front slot — never animates during shuffle
+[data-pos="0"] .ach-card:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
 
-.dark-mode.ach-card:hover {
+.dark-mode [data-pos="0"] .ach-card:hover {
   box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
 }
 
@@ -179,45 +245,11 @@
   background: $buttonHover;
 }
 
-// ─── Deck controls: prev / counter / next ────────────────────────────────────
+// ─── Controls: counter ───────────────────────────────────────────────────────
 .ach-controls {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1.25rem;
-}
-
-.ach-ctrl-btn {
-  background: none;
-  border: 2px solid $buttonColor;
-  color: $buttonColor;
-  border-radius: 50%;
-  width: 2.4rem;
-  height: 2.4rem;
-  font-size: 1.5rem;
-  line-height: 1;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
-  padding: 0;
-  font-family: inherit;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.ach-ctrl-btn:hover {
-  background: $buttonColor;
-  color: $lightBackground3;
-}
-
-.dark-mode .ach-ctrl-btn {
-  border-color: $buttonHover;
-  color: $buttonHover;
-}
-
-.dark-mode .ach-ctrl-btn:hover {
-  background: $buttonHover;
-  color: $textColorDark;
+  margin-top: 1.25rem;
 }
 
 .ach-counter {
@@ -348,7 +380,6 @@
     gap: 0;
   }
 
-  // Hide title text; only the dot remains
   .ach-index-text {
     display: none;
   }
@@ -359,7 +390,4 @@
     margin-top: 0;
   }
 
-  .ach-controls {
-    justify-content: center;
-  }
 }
