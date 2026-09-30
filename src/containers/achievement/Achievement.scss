@@ -1,34 +1,365 @@
 @import "../../_globalColor";
 
+// ─── Section heading / subtitle ───────────────────────────────────────────────
 .achievement-heading {
   font-size: 56px;
   font-weight: 400;
   line-height: normal;
-  margin: 0px;
+  margin: 0;
 }
+
 .achievement-subtitle {
   text-transform: uppercase;
-  margin: 0px;
-  margin-bottom: 50px;
+  margin: 0 0 50px;
 }
+
 .subTitle {
   color: $subTitle;
 }
 
-/* Media Query */
+// ─── Two-column layout: deck (60 %) | index (40 %) ────────────────────────────
+.ach-layout {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.ach-deck-wrapper {
+  flex: 0 0 60%;
+  max-width: 60%;
+  // extra space so peeking cards don't overflow the wrapper visually
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+
+// CSS-grid stacking: all slots share one cell; tallest card sets row height
+.ach-deck {
+  display: grid;
+}
+
+.ach-deck-slot {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start; // each slot is its own natural height
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+// Exit keyframe: top card arcs away and fades out
+@keyframes ach-exit {
+  0%   { transform: translate(0, 0)     scale(1);    opacity: 1;   }
+  55%  { transform: translate(55px, -20px) scale(0.95); opacity: 0.4; }
+  100% { transform: translate(0, 28px)  scale(0.9); opacity: 0;   }
+}
+
+.ach-deck-slot--exiting {
+  animation: ach-exit 0.3s ease forwards;
+  z-index: 10 !important;
+  pointer-events: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ach-deck-slot {
+    transition: none;
+  }
+  .ach-deck-slot--exiting {
+    animation: none;
+    opacity: 0 !important;
+  }
+}
+
+// ─── Card (same visual language as existing site) ─────────────────────────────
+.ach-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 340px;
+  background-color: $lightBackground2;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  border-radius: 12px;
+  border: 1px solid $lightBorder1;
+  padding: 1.5rem 1.25rem 1.25rem;
+  box-sizing: border-box;
+  user-select: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.dark-mode.ach-card {
+  background-color: $darkBackground;
+}
+
+.ach-card:hover {
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+}
+
+.dark-mode.ach-card:hover {
+  box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
+}
+
+// Circular logo
+.ach-image-div {
+  margin-bottom: 1rem;
+}
+
+.ach-roundedimg {
+  object-fit: contain;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+}
+
+// Text block
+.ach-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.ach-title {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: $titleColor;
+}
+
+.dark-mode .ach-title {
+  color: $textColorDark;
+}
+
+.ach-subtitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: $subTitle;
+  line-height: 1.3;
+}
+
+.ach-desc {
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: $cardSubtitle;
+  flex: 1;
+  text-align: justify;
+}
+
+// Footer link buttons
+.ach-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.ach-tag {
+  background: $buttonColor;
+  color: $lightBackground3;
+  border: none;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0 0.75em;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s ease-in;
+}
+
+.ach-tag:hover {
+  background: $buttonHover;
+}
+
+// ─── Deck controls: prev / counter / next ────────────────────────────────────
+.ach-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.ach-ctrl-btn {
+  background: none;
+  border: 2px solid $buttonColor;
+  color: $buttonColor;
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ach-ctrl-btn:hover {
+  background: $buttonColor;
+  color: $lightBackground3;
+}
+
+.dark-mode .ach-ctrl-btn {
+  border-color: $buttonHover;
+  color: $buttonHover;
+}
+
+.dark-mode .ach-ctrl-btn:hover {
+  background: $buttonHover;
+  color: $textColorDark;
+}
+
+.ach-counter {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $subTitle;
+  min-width: 3.5rem;
+  text-align: center;
+}
+
+.dark-mode .ach-counter {
+  color: $textColorDark;
+}
+
+// ─── Index panel ──────────────────────────────────────────────────────────────
+.ach-index {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-top: 0.25rem;
+}
+
+.ach-index-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  font-family: inherit;
+  transition: background 0.2s ease;
+}
+
+.ach-index-btn:hover {
+  background: rgba(85, 25, 139, 0.08);
+}
+
+.dark-mode .ach-index-btn:hover {
+  background: rgba(140, 67, 206, 0.15);
+}
+
+.ach-index-dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: 0.35rem;
+  background: $lightBorder1;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.ach-index-btn--active .ach-index-dot {
+  background: $buttonColor;
+  transform: scale(1.4);
+}
+
+.dark-mode .ach-index-btn--active .ach-index-dot {
+  background: $buttonHover;
+}
+
+.ach-index-text {
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: $cardSubtitle;
+  transition: color 0.2s ease;
+}
+
+.dark-mode .ach-index-text {
+  color: $textColorDark;
+}
+
+.ach-index-btn--active .ach-index-text {
+  color: $buttonColor;
+  font-weight: 600;
+}
+
+.dark-mode .ach-index-btn--active .ach-index-text {
+  color: $buttonHover;
+}
+
+// ─── Responsive ───────────────────────────────────────────────────────────────
 @media (max-width: 1380px) {
   .achievement-heading {
     font-size: 40px;
   }
 }
+
 @media (max-width: 768px) {
   .achievement-heading {
     font-size: 30px;
     text-align: center;
   }
+
   .achievement-subtitle {
     font-size: 16px;
     line-height: normal;
     text-align: center;
+  }
+
+  .ach-layout {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .ach-deck-wrapper {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  // Index collapses to a row of dots
+  .ach-index {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem 0 0;
+  }
+
+  .ach-index-btn {
+    padding: 0.5rem;
+    width: auto;
+    gap: 0;
+  }
+
+  // Hide title text; only the dot remains
+  .ach-index-text {
+    display: none;
+  }
+
+  .ach-index-dot {
+    width: 10px;
+    height: 10px;
+    margin-top: 0;
+  }
+
+  .ach-controls {
+    justify-content: center;
   }
 }

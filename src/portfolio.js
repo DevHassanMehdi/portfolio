@@ -266,42 +266,15 @@ const achievementSection = {
       desc: "I graduated with the highest CGPA in my Computer Science cohort, 3.78/4.0, and received the university's Gold Medal."
     },
     {
-      title: "JYU Scholarship Award",
-      subtitle: "Merit-based Scholarship, University of Jyväskylä, Finland",
-      image: require("./assets/images/jyuLogo.png"),
-      imageAlt: "JYU Scholarship Logo",
-      footerLink: [
-        { name: "Certificate", url: "https://drive.google.com/file/d/1ZfY1qLExQw9dSYjVwY3KRw9PKCKwYyN-/view?usp=sharing" }
-      ],
-      desc: "The University of Jyväskylä awarded me a merit-based scholarship for my MSc in Artificial Intelligence."
-    },
-    {
-      title: "International Research Funding",
-      subtitle: "Shanghai Sci-tech Co-research Program, Project No. 25HB2703300",
-      image: require("./assets/images/jyuLogo.png"),
-      imageAlt: "JYU Logo",
-      footerLink: [],
-      desc: "The Shanghai Sci-tech Co-research Program funded my MSc thesis research as part of the AI4HOPE project."
-    },
-    {
-      title: "Certificate of Honor, University of Jyväskylä",
-      subtitle: "Stipend for completing MSc studies within the target time frame, 2026",
+      title: "JYU Merit Scholarship & Certificate of Honor",
+      subtitle: "University of Jyväskylä, MSc Artificial Intelligence",
       image: require("./assets/images/jyuLogo.png"),
       imageAlt: "JYU Logo",
       footerLink: [
-        { name: "Certificate", url: "https://drive.google.com/file/d/1qa39S12ZhhZ3WOnEJyA06D773ipPuhHU/view?usp=drive_link" }
+        { name: "Scholarship", url: "https://drive.google.com/file/d/1ZfY1qLExQw9dSYjVwY3KRw9PKCKwYyN-/view?usp=sharing" },
+        { name: "Certificate of Honor", url: "https://drive.google.com/file/d/1qa39S12ZhhZ3WOnEJyA06D773ipPuhHU/view?usp=drive_link" }
       ],
-      desc: "The University of Jyväskylä awarded me a stipend for finishing my MSc within the target time."
-    },
-    {
-      title: "Talent Sprint Challenge, JAMK",
-      subtitle: "Entrepreneurship Program, April to May 2026",
-      image: require("./assets/images/jamkLogo.jpg"),
-      imageAlt: "JAMK Logo",
-      footerLink: [
-        { name: "Certificate", url: "https://drive.google.com/file/d/11K0ukgqvEvZ8eIqYgCG9KZNKpTmQziXP/view?usp=drive_link" }
-      ],
-      desc: "I took part in the Talent Sprint Challenge run by JAMK Talent Boost in Jyväskylä. I worked with CEOs of local tech startups on real business problems their companies were facing."
+      desc: "The University of Jyväskylä gave me a merit-based scholarship for my MSc in AI. I also received a Certificate of Honor and a stipend for finishing within the target time."
     }
   ],
   display: true
