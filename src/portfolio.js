@@ -25,7 +25,7 @@ const greeting = {
   subTitle: [
     "I train AI models and build them into real software. These days I also code with AI tools like Claude Code.",
     "Right now I am a Project Researcher at the University of Turku. I benchmark sleep foundation models on the CSC Roihu supercomputer, and I submitted a first-author paper on this work to BNAIC/BeNeLearn 2026. Before that I was at Rightware in Helsinki, shipping computer vision and LLM features into Kanzi.",
-    "When I step away from the screen I am usually on a mountain bike, cooking, or socializing with friends. Sometimes all three in the same day."
+    "When I step away from the screen I am usually on a mountain bike, cooking, or socializing with friends."
   ],
   resumeLink: "PASTE_NEW_CV_LINK_HERE",
   displayGreeting: true
@@ -89,7 +89,7 @@ const skillsSection = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true,
+  viewSkillBars: false,
   experience: [
     {
       Stack: "Computer Vision & Deep Learning",
@@ -134,7 +134,7 @@ const workExperiences = {
       role: "Backend & AI Engineer, Remote",
       company: "Ri Software (Startup)",
       companylogo: require("./assets/images/riLogo.jpeg"),
-      date: "April 2023 – February 2024",
+      date: "March 2023 – February 2024",
       desc: "I built the Python backend and REST APIs for a business management platform with 50 beta clients. I also trained ML models for sales forecasting and demand planning, and worked on the React frontend alongside a team of 20 engineers."
     }
   ]
@@ -251,7 +251,7 @@ const achievementSection = {
       image: require("./assets/images/azureLogo.png"),
       imageAlt: "Microsoft Azure Logo",
       footerLink: [
-        { name: "Credential", url: "PASTE_CREDENTIAL_LINK_HERE" }
+        { name: "Credential", url: "https://drive.google.com/file/d/10p_s1MwviKY-Kq56oiLldFVFOyCrSkrp/view?usp=sharing" }
       ],
       desc: "I passed the Azure Developer Associate exam, which covers building, deploying, and securing apps on Microsoft Azure."
     },
@@ -291,7 +291,6 @@ const socialMediaLinks = {
   gmail: "itshmehdi@gmail.com",
   github: "https://github.com/DevHassanMehdi",
   linkedin: "https://www.linkedin.com/in/devhassanmehdi/",
-  kaggle: "https://www.kaggle.com/devhassan",
   display: true
 };
 
