@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4ea199fa.css",
-    "main.js": "/portfolio/static/js/main.dfa053f1.js",
+    "main.css": "/portfolio/static/css/main.4f25801e.css",
+    "main.js": "/portfolio/static/js/main.22dee4af.js",
     "static/css/64.bba8fa55.chunk.css": "/portfolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.ec95194b.chunk.js": "/portfolio/static/js/64.ec95194b.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/portfolio/static/css/769.b3cbb36b.chunk.css",
@@ -20,15 +20,15 @@
     "static/media/rightwareLogo.png": "/portfolio/static/media/rightwareLogo.cb7e8b08953167e8b9fa.png",
     "static/media/skill.svg": "/portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/portfolio/index.html",
-    "main.4ea199fa.css.map": "/portfolio/static/css/main.4ea199fa.css.map",
-    "main.dfa053f1.js.map": "/portfolio/static/js/main.dfa053f1.js.map",
+    "main.4f25801e.css.map": "/portfolio/static/css/main.4f25801e.css.map",
+    "main.22dee4af.js.map": "/portfolio/static/js/main.22dee4af.js.map",
     "64.bba8fa55.chunk.css.map": "/portfolio/static/css/64.bba8fa55.chunk.css.map",
     "64.ec95194b.chunk.js.map": "/portfolio/static/js/64.ec95194b.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/portfolio/static/css/769.b3cbb36b.chunk.css.map",
     "769.6b18baac.chunk.js.map": "/portfolio/static/js/769.6b18baac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ea199fa.css",
-    "static/js/main.dfa053f1.js"
+    "static/css/main.4f25801e.css",
+    "static/js/main.22dee4af.js"
   ]
 }
