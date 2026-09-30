@@ -64,5 +64,40 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script data-goatcounter="https://devhassanmehdi.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script>
+      document.addEventListener('click', function(e) {
+        var a = e.target.closest('a');
+        if (!a || !window.goatcounter) return;
+        var href = a.href || '';
+        var text = (a.textContent || '').trim();
+        var name;
+        if (href.indexOf('drive.google.com/file/d/1-fUHrLwS6nTkc7pSEJtakGtNiHziDfeN') !== -1) {
+          name = 'click-resume';
+        } else if (href.indexOf('openreview.net') !== -1) {
+          name = 'click-paper-openreview';
+        } else if (href.indexOf('arxiv.org') !== -1) {
+          name = 'click-paper-arxiv';
+        } else if (href.indexOf('ieeexplore.ieee.org') !== -1) {
+          name = 'click-paper-ieee';
+        } else if (href.indexOf('linkedin.com') !== -1) {
+          name = 'click-linkedin';
+        } else if (href.indexOf('github.com') !== -1) {
+          name = 'click-github';
+        } else if (href.indexOf('mailto:') === 0) {
+          name = 'click-email';
+        } else {
+          try {
+            var url = new URL(href);
+            if (url.hostname && url.hostname !== location.hostname) {
+              name = 'click-other-' + url.hostname;
+            }
+          } catch (err) {}
+        }
+        if (name) {
+          window.goatcounter.count({ path: name, title: text, event: true });
+        }
+      });
+    </script>
   </body>
 </html>
