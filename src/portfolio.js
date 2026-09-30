@@ -27,7 +27,7 @@ const greeting = {
     "Right now I am a Project Researcher at the University of Turku. I benchmark sleep foundation models on the CSC Roihu supercomputer, and I submitted a first-author paper on this work to BNAIC/BeNeLearn 2026. Before that I was at Rightware in Helsinki, shipping computer vision and LLM features into Kanzi.",
     "When I step away from the screen I am usually on a mountain bike, cooking, or socializing with friends."
   ],
-  resumeLink: "PASTE_NEW_CV_LINK_HERE",
+  resumeLink: "https://drive.google.com/file/d/1-fUHrLwS6nTkc7pSEJtakGtNiHziDfeN/view?usp=sharing",
   displayGreeting: true
 };
 
