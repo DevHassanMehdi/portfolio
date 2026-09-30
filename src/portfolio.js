@@ -23,12 +23,11 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: [
-    "I train AI models, and implement AI features into production environments. These days I code with AI tools like Claude Code.",
-    "Right now, I am fine-tuning a deep learning foundation & Large Language models for the AI4HOPE project on the CSC Puhti & Roihu supercomputers. Before that I was at Rightware in Helsinki, shipping computer vision and LLM features into Kanzi.",
-    "When I step away from the screen I am usually on a mountain bike, in a pool, or emersed in a single player video game. Sometimes all three in the same day."
+    "I train AI models and build them into real software. These days I also code with AI tools like Claude Code.",
+    "Right now I am a Project Researcher at the University of Turku. I benchmark sleep foundation models on the CSC Roihu supercomputer, and I submitted a first-author paper on this work to BNAIC/BeNeLearn 2026. Before that I was at Rightware in Helsinki, shipping computer vision and LLM features into Kanzi.",
+    "When I step away from the screen I am usually on a mountain bike, cooking, or socializing with friends. Sometimes all three in the same day."
   ],
-  resumeLink:
-    "https://drive.google.com/file/d/1-fUHrLwS6nTkc7pSEJtakGtNiHziDfeN/view?usp=sharing",
+  resumeLink: "PASTE_NEW_CV_LINK_HERE",
   displayGreeting: true
 };
 
@@ -37,16 +36,14 @@ const greeting = {
 const skillsSection = {
   title: "What I Build",
   subTitle:
-    "I train models and ship AI features into softwares. My work covers machine learning, computer vision, LLM integration, and full-stack Python development.",
+    "I train models and ship AI features into software. Here is what I have actually worked on.",
   skills: [
-    emoji("Computer vision and object detection. I have shipped these into live automotive software."),
-    emoji("LLM integration and foundation model fine-tuning. I have built LLM features that ran in production."),
+    emoji("Computer vision and object detection. I shipped these into Rightware's Kanzi platform, which runs in production cars."),
+    emoji("Sleep staging from EEG and ECG signals. I benchmark foundation models on 2,056 subjects on the CSC Roihu supercomputer."),
+    emoji("LLM features for real users. At Rightware I built an Ollama interface that let designers edit projects in plain English."),
     emoji("Backend APIs and data pipelines in Python, FastAPI, Flask, and PostgreSQL."),
-    emoji("I work Full-stack when the project needs it. React, TypeScript, and Node.js.")
+    emoji("I also work full-stack with React, TypeScript, and Node.js when a project needs it.")
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-  https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     // AI / ML / CV
@@ -60,6 +57,12 @@ const skillsSection = {
     { skillName: "Ollama", fontAwesomeClassname: "fas fa-server" },
     { skillName: "Fine-Tuning", fontAwesomeClassname: "fas fa-sliders-h" },
     { skillName: "SHAP", fontAwesomeClassname: "fas fa-chart-bar" },
+
+    // Biosignals
+    { skillName: "EEG / ECG", fontAwesomeClassname: "fas fa-heartbeat" },
+    { skillName: "Sleep Staging", fontAwesomeClassname: "fas fa-bed" },
+
+    // HPC
     { skillName: "SLURM", fontAwesomeClassname: "fas fa-server" },
     { skillName: "HPC", fontAwesomeClassname: "fas fa-microchip" },
 
@@ -77,7 +80,8 @@ const skillsSection = {
     // Tools & Environments
     { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
     { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
-    { skillName: "Linux / Bash", fontAwesomeClassname: "fas fa-terminal" }
+    { skillName: "Linux / Bash", fontAwesomeClassname: "fas fa-terminal" },
+    { skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft" }
   ],
   display: true
 };
@@ -113,25 +117,25 @@ const workExperiences = {
   display: true,
   experience: [
     {
-      role: "Project Researcher – Turku, Finland",
+      role: "Project Researcher, Turku, Finland",
       company: "University of Turku",
       companylogo: require("./assets/images/utuLogo.jpg"),
-      date: "June 2026 – August 2026",
-      desc: "I am continuing my thesis research as a Project Researcher at the University of Turku. I benchmark and implement deep learning foundation models for sleep staging on MESA polysomnography data, running jobs on the CSC Puhti & Roihu supercomputers via SLURM. Right now I am implementing Hypnos, an Oxford paper that applies next-token prediction to physiological signals the same way LLMs process language. It is hands-on work at the boundary of LLM architecture and clinical data."
+      date: "June 2026 – Present",
+      desc: "I benchmark foundation models for automatic sleep staging on MESA polysomnography data. The main question is how well they work with fewer sensors, like the ECG signal that wearables can record. I submitted a first-author paper on this to BNAIC/BeNeLearn 2026. Now I run the full 2,056-subject benchmark on the CSC Roihu supercomputer, with 90 fine-tuning runs across six models. Before scaling up, I found and fixed a label bug that was lowering results across most of the dataset."
     },
     {
-      role: "AI Engineer Trainee – Helsinki, Finland",
+      role: "AI Engineer Trainee, Helsinki, Finland",
       company: "Rightware Oy",
       companylogo: require("./assets/images/rightwareLogo.png"),
       date: "April 2025 – August 2025",
-      desc: "Kanzi is an automotive HMI platform used in production vehicles by major car manufacturers globally. I spent the summer shipping AI features directly into that product. I improved object detection accuracy from 64% to 83%, built an LLM interface using Ollama that let designers make project changes in plain English, handling the prompt design and orchestration myself, created a font recognition pipeline trained on 30,000 synthetic images, and designed a layout adaptation tool that reduced hours of manual work to seconds."
+      desc: "I built production AI features for Kanzi, Rightware's automotive UI platform. My main project was moving object detection from YOLOv7 to YOLOX, which raised accuracy from 64% to 83% and fixed a licensing conflict. I created the company's first font recognition feature with a ResNet50 trained on 30,000 synthetic images. I also shipped a local LLM interface with Ollama that let designers edit projects in plain English, and a layout tool that cut hours of manual work to seconds."
     },
     {
-      role: "Backend & AI Engineer – Remote, Ukraine",
+      role: "Backend & AI Engineer, Remote",
       company: "Ri Software (Startup)",
       companylogo: require("./assets/images/riLogo.jpeg"),
       date: "April 2023 – February 2024",
-      desc: "Ri-Software was a startup building an AI-driven business management platform for small businesses. I built the backend architecture and REST APIs in Python and Flask, trained ML models for sales forecasting and inventory planning, and built data pipelines using Pandas and PostgreSQL. I also contributed to the React and TypeScript frontend alongside a team of 20 engineers."
+      desc: "I built the Python backend and REST APIs for a business management platform with 50 beta clients. I also trained ML models for sales forecasting and demand planning, and worked on the React frontend alongside a team of 20 engineers."
     }
   ]
 };
@@ -146,14 +150,14 @@ const educationInfo = {
       logo: require("./assets/images/jyuLogo.png"),
       subHeader: "Master of Science in Artificial Intelligence",
       duration: "September 2024 – June 2026",
-      desc: "I completed my MSc in Artificial Intelligence on a merit-based JYU scholarship and graduated in June 2026. My thesis evaluated ML model performance across clinical PSG and wearable sleep data using TSFEL feature extraction and SHAP analysis. The research was part of the AI4HOPE project in collaboration with the University of Turku, and received funding from the Shanghai Sci-tech Co-research Program."
+      desc: "I completed my MSc on a merit-based JYU scholarship and graduated with a grade of 4/5. My thesis compared ML models on clinical PSG and wearable sleep data, using TSFEL for feature extraction and SHAP to explain the results. It was part of the AI4HOPE project with the University of Turku, and the Shanghai Sci-tech Co-research Program also funded it."
     },
     {
       schoolName: "IQRA National University",
       logo: require("./assets/images/inuLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "February 2019 – February 2023",
-      desc: "I graduated top of my cohort with a CGPA of 3.78 out of 4.0 and was awarded a Gold Medal for the highest academic performance across the entire graduating batch. My thesis was a real-time driver drowsiness and lane deviation detection system built with YOLO and OpenCV."
+      desc: "I graduated with a CGPA of 3.78/4.0 and a Gold Medal for the highest grades in my batch. For my thesis I built a real-time system with YOLO and OpenCV that detected driver drowsiness and lane deviation."
     }
   ]
 };
@@ -175,14 +179,19 @@ const bigProjects = {
     {
       projectName: "Sleep Staging Research (AI4HOPE Project)",
       projectDesc:
-        "My MSc thesis was part of the AI4HOPE project, in collaboration with the University of Turku and was funded by the Shanghai Sci-tech Co-research Program. I built a four-class sleep staging pipeline using MESA and TIHM datasets, applied TSFEL for time-series feature extraction, and used SHAP analysis to understand which features drove model decisions across clinical and wearable data environments. The work continues. I am now a Project Researcher at UTU, fine-tuning a deep learning foundation model on the same data.",
-      techStack: ["Python", "TSFEL", "scikit-learn", "SHAP", "Pandas", "NumPy", "Matplotlib"],
-      footerLink: []
+        "This started as my MSc thesis. I built a four-class sleep staging pipeline on the MESA and TIHM datasets, with TSFEL for feature extraction and SHAP to see which features drove the model. As a Project Researcher at UTU, I now benchmark foundation models like SleepFM, BIOT and LaBraM on EEG and ECG signals. I submitted a first-author paper on this work to BNAIC/BeNeLearn 2026.",
+      techStack: ["Python", "PyTorch", "TSFEL", "scikit-learn", "SHAP", "SLURM", "CSC Roihu"],
+      footerLink: [
+        {
+          name: "Read the Paper",
+          url: "https://openreview.net/forum?id=jhKtNcPheq"
+        }
+      ]
     },
     {
-      projectName: "ImageUpLift — AI Image Enhancer and Converter",
+      projectName: "ImageUpLift: AI Image Enhancer and Converter",
       projectDesc:
-        "An AI web app that takes a low quality sketch or image and turns it into a clean, enhanced, or vectorized version. Built for designers who need to go from a rough scan to a production ready file fast. FastAPI backend with ESRGAN and OpenCV pipelines, React frontend.",
+        "An AI web app that turns a low-quality sketch or image into a clean, enhanced, or vectorized version. I built it for designers who need to go from a rough scan to a production-ready file quickly. It has a FastAPI backend with ESRGAN and OpenCV pipelines, and a React frontend.",
       techStack: ["FastAPI", "ESRGAN", "OpenCV", "CLIP", "React", "Docker"],
       footerLink: [
         {
@@ -194,7 +203,7 @@ const bigProjects = {
     {
       projectName: "Driving Negligence Dissuader System (DNDS)",
       projectDesc:
-        "A real-time computer vision system that monitors drivers for drowsiness and unsafe behavior. It tracks eye closure through facial landmarks, detects lane deviation, and identifies nearby vehicles, animals, and pedestrians using YOLO. When risk is detected, the system alerts the driver immediately. Runs continuously on a live camera feed.",
+        "My BSc thesis. A real-time computer vision system that watches drivers for drowsiness and unsafe driving. It tracks eye closure through facial landmarks, detects lane deviation, and uses YOLO to spot nearby vehicles, animals, and pedestrians. When it detects a risk, it alerts the driver right away.",
       techStack: ["Python", "YOLO", "OpenCV", "TensorFlow", "DLib", "Haar Cascades", "Raspberry Pi"],
       footerLink: [
         {
@@ -212,21 +221,39 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Recognitions and Accomplishments"),
-  subtitle: "A curated collection of my key awards, publications, and certifications.",
+  subtitle: "Publications, awards, and certifications I have earned so far.",
 
   achievementsCards: [
     {
-      title: "Research Publication, IEEE PIC 2024",
+      title: "Research Paper, BNAIC/BeNeLearn 2026 (Under Review)",
+      subtitle: "Comparative Analysis of State-of-the-Art Foundation Models for Sleep Analysis Under Channel Reduction",
+      image: require("./assets/images/utuLogo.jpg"),
+      imageAlt: "University of Turku Logo",
+      footerLink: [
+        { name: "View Paper", url: "https://openreview.net/forum?id=jhKtNcPheq" },
+        { name: "arXiv Preprint", url: "https://arxiv.org/abs/2609.22105" }
+      ],
+      desc: "We benchmarked six sleep staging models, including SleepFM, BIOT and LaBraM, on the MESA sleep dataset. We trained and tested each one on EEG only, ECG only, and both together, to measure how much accuracy you lose with the ECG signal that wearables record. EEG gave the best results, and switching to ECG cost 0.35 macro F1 on average."
+    },
+    {
+      title: "Research Paper, IEEE PIC 2024",
       subtitle: "Fuzzy-Based Atrous Convolution for Brain Tumor Detection Using MRI",
       image: require("./assets/images/ieeeLogo.png"),
       imageAlt: "IEEE Logo",
       footerLink: [
-        {
-          name: "View Paper",
-          url: "https://ieeexplore.ieee.org/document/10892686"
-        }
+        { name: "View Paper", url: "https://ieeexplore.ieee.org/document/10892686" }
       ],
-      desc: "My most notable research contribution is this IEEE paper, co-authored with researchers from the University of Turku and the University of Sydney. We built a custom neural architecture combining fuzzy logic with dilated convolutions for MRI-based brain tumor detection, hitting 98.8 to 99.7% classification accuracy."
+      desc: "I co-authored this paper with researchers from the University of Turku and the University of Sydney. We combined fuzzy logic with dilated convolutions to classify brain tumors in MRI scans. The model reached 98.8 to 99.7% accuracy with fewer trainable parameters."
+    },
+    {
+      title: "Microsoft Certified: Azure Developer Associate",
+      subtitle: "Microsoft",
+      image: require("./assets/images/azureLogo.png"),
+      imageAlt: "Microsoft Azure Logo",
+      footerLink: [
+        { name: "Credential", url: "PASTE_CREDENTIAL_LINK_HERE" }
+      ],
+      desc: "I passed the Azure Developer Associate exam, which covers building, deploying, and securing apps on Microsoft Azure."
     },
     {
       title: "Gold Medal, Top Graduate",
@@ -234,34 +261,9 @@ const achievementSection = {
       image: require("./assets/images/goldmedalLogo.png"),
       imageAlt: "Gold Medal Logo",
       footerLink: [
-        {
-          name: "Certificate",
-          url: "https://drive.google.com/file/d/1XFVrFFSS-6blyILIBnymOHd0VFm1crjv/view?usp=sharing"
-        }
+        { name: "Certificate", url: "https://drive.google.com/file/d/1XFVrFFSS-6blyILIBnymOHd0VFm1crjv/view?usp=sharing" }
       ],
-      desc: "My most notable academic achievement is my Gold Medal from Iqra National University. I graduated with the highest CGPA of 3.78/4.0 across my entire Computer Science cohort. Four years, every subject, top of the batch."
-    },
-    {
-      title: "Talent Sprint Challenge, JAMK",
-      subtitle: "Entrepreneurship Program, April to May 2026",
-      image: require("./assets/images/jamkLogo.jpg"),
-      imageAlt: "JAMK Logo",
-      footerLink: [
-        {
-          name: "Certificate",
-          url: "https://drive.google.com/file/d/11K0ukgqvEvZ8eIqYgCG9KZNKpTmQziXP/view?usp=drive_link"
-        }
-      ],
-      desc: "Most recently I completed the Talent Sprint Challenge run by JAMK Talent Boost in Jyväskylä. I worked with CEOs of local tech startups on their core business problems, applying analytical and strategic thinking to real company challenges."
-    },
-    {
-      title: "International Research Funding",
-      subtitle: "Shanghai Sci-tech Co-research Program, Project No. 25HB2703300",
-      image: require("./assets/images/jyuLogo.png"),
-      imageAlt: "JYU Logo",
-      footerLink: [],
-      desc: "My MSc thesis received external funding from the Shanghai Sci-tech Co-research Program. That kind of funding does not go to every student. It went to this project because the research was worth backing."
-
+      desc: "I graduated with the highest CGPA in my Computer Science cohort, 3.78/4.0, and received the university's Gold Medal."
     },
     {
       title: "JYU Scholarship Award",
@@ -269,12 +271,17 @@ const achievementSection = {
       image: require("./assets/images/jyuLogo.png"),
       imageAlt: "JYU Scholarship Logo",
       footerLink: [
-        {
-          name: "Certificate",
-          url: "https://drive.google.com/file/d/1ZfY1qLExQw9dSYjVwY3KRw9PKCKwYyN-/view?usp=sharing"
-        }
+        { name: "Certificate", url: "https://drive.google.com/file/d/1ZfY1qLExQw9dSYjVwY3KRw9PKCKwYyN-/view?usp=sharing" }
       ],
-      desc: "I was awarded a merit-based scholarship by the University of Jyväskylä to study MSc Artificial Intelligence. It was competitive and granted to a small number of incoming students each year."
+      desc: "The University of Jyväskylä awarded me a merit-based scholarship for my MSc in Artificial Intelligence."
+    },
+    {
+      title: "International Research Funding",
+      subtitle: "Shanghai Sci-tech Co-research Program, Project No. 25HB2703300",
+      image: require("./assets/images/jyuLogo.png"),
+      imageAlt: "JYU Logo",
+      footerLink: [],
+      desc: "The Shanghai Sci-tech Co-research Program funded my MSc thesis research as part of the AI4HOPE project."
     },
     {
       title: "Certificate of Honor, University of Jyväskylä",
@@ -282,13 +289,20 @@ const achievementSection = {
       image: require("./assets/images/jyuLogo.png"),
       imageAlt: "JYU Logo",
       footerLink: [
-        {
-          name: "Certificate",
-          url: "https://drive.google.com/file/d/1qa39S12ZhhZ3WOnEJyA06D773ipPuhHU/view?usp=drive_link"
-        }
+        { name: "Certificate", url: "https://drive.google.com/file/d/1qa39S12ZhhZ3WOnEJyA06D773ipPuhHU/view?usp=drive_link" }
       ],
-      desc: "I was awarded a stipend by the University of Jyväskylä for completing my MSc within the target time frame."
+      desc: "The University of Jyväskylä awarded me a stipend for finishing my MSc within the target time."
     },
+    {
+      title: "Talent Sprint Challenge, JAMK",
+      subtitle: "Entrepreneurship Program, April to May 2026",
+      image: require("./assets/images/jamkLogo.jpg"),
+      imageAlt: "JAMK Logo",
+      footerLink: [
+        { name: "Certificate", url: "https://drive.google.com/file/d/11K0ukgqvEvZ8eIqYgCG9KZNKpTmQziXP/view?usp=drive_link" }
+      ],
+      desc: "I took part in the Talent Sprint Challenge run by JAMK Talent Boost in Jyväskylä. I worked with CEOs of local tech startups on real business problems their companies were facing."
+    }
   ],
   display: true
 };
