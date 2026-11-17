@@ -23,9 +23,9 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: [
-    "I train AI models and build them into real software. These days I also code with AI tools like Claude Code.",
-    "Right now I am a Project Researcher at the University of Turku. I benchmark sleep foundation models on the CSC Roihu supercomputer, and I submitted a first-author paper on this work to BNAIC/BeNeLearn 2026. Before that I was at Rightware in Helsinki, shipping computer vision and LLM features into Kanzi.",
-    "When I step away from the screen I am usually on a mountain bike, cooking, or socializing with friends."
+    "I am an AI engineer, researcher and software developer. I design and train AI models, and I implement them on the backend and frontend. I also use Claude Code to be more productive and efficient.",
+    "Right now I work as a Project Researcher at the University of Turku, on foundation models for sleep staging. Before that, I developed computer vision and LLM features for Rightware.",
+    "When I step away from the screen, I am usually on a mountain bike, cooking, or hanging out with friends."
   ],
   resumeLink: "https://drive.google.com/file/d/1-fUHrLwS6nTkc7pSEJtakGtNiHziDfeN/view?usp=sharing",
   displayGreeting: true
@@ -36,13 +36,13 @@ const greeting = {
 const skillsSection = {
   title: "What I Build",
   subTitle:
-    "I train models and ship AI features into software. Here is what I have actually worked on.",
+    "I design and train AI models and implement them in softwares people use in daily life. Here is what I have worked on.",
   skills: [
-    emoji("Computer vision and object detection. I shipped these into Rightware's Kanzi platform, which runs in production cars."),
-    emoji("Sleep staging from EEG and ECG signals. I benchmark foundation models on 2,056 subjects on the CSC Roihu supercomputer."),
-    emoji("LLM features for real users. At Rightware I built an Ollama interface that let designers edit projects in plain English."),
+    emoji("Computer vision and object detection. I built these features for Rightware's Kanzi Author, their automotive UI platform."),
+    emoji("AI for Medical & IoT. I develop, modify and optimize foundation models for low energy IoT devices, and benchmark them on the CSC Roihu supercomputer."),
+    emoji("LLM features for professional users. For example at Rightware I built an Ollama interface that let designers edit projects with English prompts."),
     emoji("Backend APIs and data pipelines in Python, FastAPI, Flask, and PostgreSQL."),
-    emoji("I also work full-stack with React, TypeScript, and Node.js when a project needs it.")
+    emoji("I also work full-stack with React, TypeScript, and Node.js")
   ],
 
   softwareSkills: [
@@ -81,7 +81,8 @@ const skillsSection = {
     { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
     { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
     { skillName: "Linux / Bash", fontAwesomeClassname: "fas fa-terminal" },
-    { skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft" }
+    { skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft" },
+    { skillName: "Claude Code", fontAwesomeClassname: "fas fa-magic" }
   ],
   display: true
 };
@@ -121,21 +122,21 @@ const workExperiences = {
       company: "University of Turku",
       companylogo: require("./assets/images/utuLogo.jpg"),
       date: "June 2026 – Present",
-      desc: "I benchmark foundation models for automatic sleep staging on MESA polysomnography data. The main question is how well they work with fewer sensors, like the ECG signal that wearables can record. I submitted a first-author paper on this to BNAIC/BeNeLearn 2026. Now I run the full 2,056-subject benchmark on the CSC Roihu supercomputer, with 90 fine-tuning runs across six models. Before scaling up, I found and fixed a label bug that was lowering results across most of the dataset."
+      desc: "I work on foundation models for automatic sleep staging on datasets such as MESA, SHHS, MrOS and MOODY. I develop new model variants, modify their architectures, optimize them for low energy IoT devices, and benchmark them against one another. I run the training and experiments mainly on the CSC Roihu supercomputer. I submitted a first-author paper to BNAIC/BeNeLearn 2026 on how well these models work with fewer sensors, like the ECG signal that wearables can record."
     },
     {
       role: "AI Engineer Trainee, Helsinki, Finland",
       company: "Rightware Oy",
       companylogo: require("./assets/images/rightwareLogo.png"),
       date: "April 2025 – August 2025",
-      desc: "I built production AI features for Kanzi, Rightware's automotive UI platform. My main project was moving object detection from YOLOv7 to YOLOX, which raised accuracy from 64% to 83% and fixed a licensing conflict. I created the company's first font recognition feature with a ResNet50 trained on 30,000 synthetic images. I also shipped a local LLM interface with Ollama that let designers edit projects in plain English, and a layout tool that cut hours of manual work to seconds."
+      desc: "I built production AI features for Kanzi Author, Rightware's web-based automotive UI platform, from concept to implementation. I moved object detection from YOLOv7 to YOLOX with custom augmentation, which raised accuracy from 64% to 83% at 30 fps and fixed a licensing conflict. I built the company's first font recognition feature with a ResNet50 trained on 30,000 synthetic images. I also built a local LLM interface with Ollama that let designers edit projects in plain English, and a layout tool that lets designers adapt a project to a new resolution in one click."
     },
     {
       role: "Backend & AI Engineer, Remote",
       company: "Ri Software (Startup)",
       companylogo: require("./assets/images/riLogo.jpeg"),
-      date: "March 2023 – February 2024",
-      desc: "I built the Python backend and REST APIs for a business management platform with 50 beta clients. I also trained ML models for sales forecasting and demand planning, and worked on the React frontend alongside a team of 20 engineers."
+      date: "March 2023 – January 2024",
+      desc: "I worked on the backend and ML models of an AI platform for small businesses. I built the Python backend and REST APIs with FastAPI, Flask and PostgreSQL for 50 beta clients. I trained ML models for sales forecasting and inventory demand planning, built data pipelines with Pandas, NumPy and SciPy, and worked on the React and TypeScript frontend with a team of 20 engineers."
     }
   ]
 };
@@ -157,7 +158,7 @@ const educationInfo = {
       logo: require("./assets/images/inuLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "February 2019 – February 2023",
-      desc: "I graduated with a CGPA of 3.78/4.0 and a Gold Medal for the highest grades in my batch. For my thesis I built a real-time system with YOLO and OpenCV that detected driver drowsiness and lane deviation."
+      desc: "I graduated with a CGPA of 3.78/4.0. I was awarded the Gold Medal for the highest academic performance for 4 consecutive years. For my thesis I built a real-time system with YOLO and OpenCV that detected driver drowsiness and lane deviation."
     }
   ]
 };
@@ -179,7 +180,7 @@ const bigProjects = {
     {
       projectName: "Sleep Staging Research (AI4HOPE Project)",
       projectDesc:
-        "This started as my MSc thesis. I built a four-class sleep staging pipeline on the MESA and TIHM datasets, with TSFEL for feature extraction and SHAP to see which features drove the model. As a Project Researcher at UTU, I now benchmark foundation models like SleepFM, BIOT and LaBraM on EEG and ECG signals. I submitted a first-author paper on this work to BNAIC/BeNeLearn 2026.",
+        "This started as my MSc thesis. I built a four-class sleep staging pipeline on the MESA and TIHM datasets, with TSFEL for feature extraction and SHAP to see which features drove the model. As a Project Researcher at UTU, I now develop new variants of foundation models like SleepFM, BIOT and LaBraM, modify their architectures, optimize them for IoT devices, and benchmark them on EEG and ECG signals. I submitted a first-author paper on this work to BNAIC/BeNeLearn 2026.",
       techStack: ["Python", "PyTorch", "TSFEL", "scikit-learn", "SHAP", "SLURM", "CSC Roihu"],
       footerLink: [
         {
@@ -225,6 +226,16 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "Gold Medal for Academic Performance",
+      subtitle: "Iqra National University, BSc Computer Science",
+      image: require("./assets/images/goldmedalLogo.png"),
+      imageAlt: "Gold Medal Logo",
+      footerLink: [
+        { name: "Certificate", url: "https://drive.google.com/file/d/1XFVrFFSS-6blyILIBnymOHd0VFm1crjv/view?usp=sharing" }
+      ],
+      desc: "I was awarded the Gold Medal for the highest academic performance for 4 consecutive years in my bachelor's."
+    },
+    {
       title: "Research Paper, BNAIC/BeNeLearn 2026 (Under Review)",
       subtitle: "Comparative Analysis of State-of-the-Art Foundation Models for Sleep Analysis Under Channel Reduction",
       image: require("./assets/images/utuLogo.jpg"),
@@ -254,16 +265,6 @@ const achievementSection = {
         { name: "Credential", url: "https://drive.google.com/file/d/10p_s1MwviKY-Kq56oiLldFVFOyCrSkrp/view?usp=sharing" }
       ],
       desc: "I passed the Azure Developer Associate exam, which covers building, deploying, and securing apps on Microsoft Azure."
-    },
-    {
-      title: "Gold Medal, Top Graduate",
-      subtitle: "Highest CGPA in the Bachelor's Program, Iqra National University",
-      image: require("./assets/images/goldmedalLogo.png"),
-      imageAlt: "Gold Medal Logo",
-      footerLink: [
-        { name: "Certificate", url: "https://drive.google.com/file/d/1XFVrFFSS-6blyILIBnymOHd0VFm1crjv/view?usp=sharing" }
-      ],
-      desc: "I graduated with the highest CGPA in my Computer Science cohort, 3.78/4.0, and received the university's Gold Medal."
     },
     {
       title: "JYU Merit Scholarship & Certificate of Honor",
