@@ -82,6 +82,10 @@
   line-height: 1.5;
 }
 
+.dark-mode .proj-text-desc {
+  color: $textColorDark;
+}
+
 .proj-text-bullets > ul {
   margin-top: 0.5rem;
   padding-left: 1.2rem;

@@ -226,16 +226,6 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Gold Medal for Academic Performance",
-      subtitle: "Iqra National University, BSc Computer Science",
-      image: require("./assets/images/goldmedalLogo.png"),
-      imageAlt: "Gold Medal Logo",
-      footerLink: [
-        { name: "Certificate", url: "https://drive.google.com/file/d/1XFVrFFSS-6blyILIBnymOHd0VFm1crjv/view?usp=sharing" }
-      ],
-      desc: "I was awarded the Gold Medal for the highest academic performance for 4 consecutive years in my bachelor's."
-    },
-    {
       title: "Research Paper, BNAIC/BeNeLearn 2026 (Under Review)",
       subtitle: "Comparative Analysis of State-of-the-Art Foundation Models for Sleep Analysis Under Channel Reduction",
       image: require("./assets/images/utuLogo.jpg"),
@@ -255,6 +245,16 @@ const achievementSection = {
         { name: "View Paper", url: "https://ieeexplore.ieee.org/document/10892686" }
       ],
       desc: "I co-authored this paper with researchers from the University of Turku and the University of Sydney. We combined fuzzy logic with dilated convolutions to classify brain tumors in MRI scans. The model reached 98.8 to 99.7% accuracy with fewer trainable parameters."
+    },
+    {
+      title: "Gold Medal for Academic Performance",
+      subtitle: "Iqra National University, BSc Computer Science",
+      image: require("./assets/images/goldmedalLogo.png"),
+      imageAlt: "Gold Medal Logo",
+      footerLink: [
+        { name: "Certificate", url: "https://drive.google.com/file/d/1XFVrFFSS-6blyILIBnymOHd0VFm1crjv/view?usp=sharing" }
+      ],
+      desc: "I was awarded the Gold Medal for the highest academic performance for 4 consecutive years in my bachelor's."
     },
     {
       title: "Microsoft Certified: Azure Developer Associate",

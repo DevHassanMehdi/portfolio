@@ -214,6 +214,10 @@
   text-align: justify;
 }
 
+.dark-mode .ach-desc {
+  color: $textColorDark;
+}
+
 // Footer link buttons
 .ach-footer {
   display: flex;
