@@ -23,9 +23,9 @@ const greeting = {
   username: "Hassan Mehdi",
   title: "Hi, I'm Hassan",
   subTitle: [
-    "I am an AI engineer, researcher and software developer. I design and train AI models, and I implement them on the backend and frontend. I also use Claude Code to be more productive and efficient.",
-    "Right now I work as a Project Researcher at the University of Turku, on foundation models for sleep staging. Before that, I developed computer vision and LLM features for Rightware.",
-    "When I step away from the screen, I am usually on a mountain bike, cooking, or hanging out with friends."
+    "I'm an AI engineer with almost 2 years of professional experience. I love taking on new challenges and explore new ideas. And I like explaining how I approach them to my team. I take initiative naturally and see my work through to the end.",
+    "I work methodically, a trait I picked up from my mentors in my current and past jobs. It helps me stay organized and thorough.",
+    "I'm curious about everything: art, science, philosophy, TV shows. People find me chearful and easy to talk to, and I like helping them go from stressing to laughing. Suomen kielen taitoni on vielä alkeistasolla, mutta haluan oppia lisää."
   ],
   resumeLink: "https://drive.google.com/file/d/1-fUHrLwS6nTkc7pSEJtakGtNiHziDfeN/view?usp=sharing",
   displayGreeting: true
@@ -36,13 +36,13 @@ const greeting = {
 const skillsSection = {
   title: "What I Build",
   subTitle:
-    "I design and train AI models and implement them in softwares people use in daily life. Here is what I have worked on.",
+    "I design and train AI models and implement them in software people use in daily life. Here is what I have worked on.",
   skills: [
     emoji("Computer vision and object detection. I built these features for Rightware's Kanzi Author, their automotive UI platform."),
     emoji("AI for Medical & IoT. I develop, modify and optimize foundation models for low energy IoT devices, and benchmark them on the CSC Roihu supercomputer."),
     emoji("LLM features for professional users. For example at Rightware I built an Ollama interface that let designers edit projects with English prompts."),
     emoji("Backend APIs and data pipelines in Python, FastAPI, Flask, and PostgreSQL."),
-    emoji("I also work full-stack with React, TypeScript, and Node.js")
+    emoji("I also work full-stack with React, TypeScript, and Node.js.")
   ],
 
   softwareSkills: [
@@ -129,14 +129,14 @@ const workExperiences = {
       company: "Rightware Oy",
       companylogo: require("./assets/images/rightwareLogo.png"),
       date: "April 2025 – August 2025",
-      desc: "I built production AI features for Kanzi Author, Rightware's web-based automotive UI platform, from concept to implementation. I moved object detection from YOLOv7 to YOLOX with custom augmentation, which raised accuracy from 64% to 83% at 30 fps and fixed a licensing conflict. I built the company's first font recognition feature with a ResNet50 trained on 30,000 synthetic images. I also built a local LLM interface with Ollama that let designers edit projects in plain English, and a layout tool that lets designers adapt a project to a new resolution in one click."
+      desc: "I worked on production AI features for Kanzi Author, Rightware's web-based automotive UI platform, from concept to implementation. That meant preparing the data, training models, implementing them on the backend and frontend, and testing. I presented these features to client stakeholders alongside the CEO. I moved object detection from YOLOv7 to YOLOX with custom augmentation, which raised accuracy from 64% to 83% at 30 fps and fixed a licensing conflict. I built a local LLM interface with Ollama that let designers edit projects in with prompts, and a layout tool that lets designers adapt a project to a new resolution in one click. I slso built the company's first font recognition feature with a ResNet50 trained on 30,000 synthetic images."
     },
     {
       role: "Backend & AI Engineer, Remote",
       company: "Ri Software (Startup)",
       companylogo: require("./assets/images/riLogo.jpeg"),
       date: "March 2023 – January 2024",
-      desc: "I worked on the backend and ML models of an AI platform for small businesses. I built the Python backend and REST APIs with FastAPI, Flask and PostgreSQL for 50 beta clients. I trained ML models for sales forecasting and inventory demand planning, built data pipelines with Pandas, NumPy and SciPy, and worked on the React and TypeScript frontend with a team of 20 engineers."
+      desc: "I worked on the backend and ML models of an AI-driven business management platform for small businesses, in an early startup. I built the Python backend and REST APIs with FastAPI, Flask and PostgreSQL for 50 beta clients. I built data pipelines with Pandas, NumPy and SciPy, and trained ML models for sales forecasting, inventory demand planning and employee productivity scoring. I also worked on the React and TypeScript frontend with a team of 20 engineers."
     }
   ]
 };
@@ -180,7 +180,7 @@ const bigProjects = {
     {
       projectName: "Sleep Staging Research (AI4HOPE Project)",
       projectDesc:
-        "This started as my MSc thesis. I built a four-class sleep staging pipeline on the MESA and TIHM datasets, with TSFEL for feature extraction and SHAP to see which features drove the model. As a Project Researcher at UTU, I now develop new variants of foundation models like SleepFM, BIOT and LaBraM, modify their architectures, optimize them for IoT devices, and benchmark them on EEG and ECG signals. I submitted a first-author paper on this work to BNAIC/BeNeLearn 2026.",
+        "This started as my MSc thesis. I built a four-class sleep staging pipeline on the MESA and TIHM datasets, with TSFEL for feature extraction and SHAP to see which features drove the model. As a Project Researcher at UTU, I now develop new variants of foundation models like SleepFM, BIOT and LaBraM, modify their architectures, optimize them for low energy IoT devices, and benchmark them on EEG and ECG signals. I submitted a first-author paper on this work to BNAIC/BeNeLearn 2026.",
       techStack: ["Python", "PyTorch", "TSFEL", "scikit-learn", "SHAP", "SLURM", "CSC Roihu"],
       footerLink: [
         {
