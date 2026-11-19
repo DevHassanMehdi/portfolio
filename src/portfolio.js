@@ -25,7 +25,7 @@ const greeting = {
   subTitle: [
     "I'm an AI engineer with almost 2 years of professional experience. I love taking on new challenges and explore new ideas. And I like explaining how I approach them to my team. I take initiative naturally and see my work through to the end.",
     "I work methodically, a trait I picked up from my mentors in my current and past jobs. It helps me stay organized and thorough.",
-    "I'm curious about everything: art, science, philosophy, TV shows. People find me chearful and easy to talk to, and I like helping them go from stressing to laughing. Suomen kielen taitoni on vielä alkeistasolla, mutta haluan oppia lisää."
+    "I'm curious about everything: art, science, philosophy, TV shows. People find me cheerful and easy to talk to, and I like helping them go from stressing to laughing. Suomen kielen taitoni on vielä alkeistasolla, mutta haluan oppia lisää."
   ],
   resumeLink: "https://drive.google.com/file/d/1-fUHrLwS6nTkc7pSEJtakGtNiHziDfeN/view?usp=sharing",
   displayGreeting: true
@@ -129,7 +129,7 @@ const workExperiences = {
       company: "Rightware Oy",
       companylogo: require("./assets/images/rightwareLogo.png"),
       date: "April 2025 – August 2025",
-      desc: "I worked on production AI features for Kanzi Author, Rightware's web-based automotive UI platform, from concept to implementation. That meant preparing the data, training models, implementing them on the backend and frontend, and testing. I presented these features to client stakeholders alongside the CEO. I moved object detection from YOLOv7 to YOLOX with custom augmentation, which raised accuracy from 64% to 83% at 30 fps and fixed a licensing conflict. I built a local LLM interface with Ollama that let designers edit projects in with prompts, and a layout tool that lets designers adapt a project to a new resolution in one click. I slso built the company's first font recognition feature with a ResNet50 trained on 30,000 synthetic images."
+      desc: "I worked on production AI features for Kanzi Author, Rightware's web-based automotive UI platform, from concept to implementation. That meant preparing the data, training models, implementing them on the backend and frontend, and testing. I presented these features to client stakeholders alongside the CEO. I moved Kanzi Author's object detection feature from YOLOv7 to YOLOX with custom augmentation, which raised accuracy from 64% to 83% at 30 fps and fixed a licensing conflict. I built a local LLM interface with Ollama that let designers edit projects with prompts, and a layout tool that lets designers adapt a project to new resolutions in one click. I also built the company's first font recognition feature with a ResNet50 trained on 30,000 synthetic images."
     },
     {
       role: "Backend & AI Engineer, Remote",
